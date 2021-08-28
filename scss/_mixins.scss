@@ -3,6 +3,11 @@
   padding: 1rem 4.97rem !important;
   line-height: 2.1rem;
   display: inline-block;
+ transition:all .2s linear;
+  &:hover{
+    background-color:#7061f0 ;
+    color: #fff !important;
+  }
 }
 
 @mixin cta-secondary {
@@ -12,4 +17,8 @@
   color:#fff;
   text-decoration: none;
   display: inline-block;
+  transition:all .2s linear;
+  &:hover{
+    background-color: #fff;
+  }
 }
