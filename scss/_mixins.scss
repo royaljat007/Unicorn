@@ -1,8 +1,10 @@
 @mixin cta-primary {
   border: 1px solid #7061f0;
+  font-size: 1.6rem;
   padding: 1rem 4.97rem !important;
   line-height: 2.1rem;
   display: inline-block;
+  color: #1b2f53;
  transition:all .2s linear;
   &:hover{
     background-color:#7061f0 ;
