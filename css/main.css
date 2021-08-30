@@ -53,6 +53,7 @@ h6 {
   color: #7061F0;
   font-weight: normal;
   font-size: 2.8rem;
+  line-height: 3.8rem;
 }
 
 p {
@@ -368,6 +369,10 @@ footer .footer-logo {
 .home-banner {
   border-bottom: 0.2rem solid #1b2f53;
 }
+.home-banner .home-banner-bg {
+  position: absolute;
+  z-index: -1;
+}
 .home-banner .home-banner-inner {
   padding-top: 10.6rem;
   padding-bottom: 10.3rem;
@@ -395,12 +400,12 @@ footer .footer-logo {
   line-height: 3.8rem;
 }
 .home-banner .gray-box {
-  width: 41.4rem;
-  height: 32.5rem;
+  width: 41.9rem;
+  height: 34.5rem;
   background-color: #e8f0ff;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -7px;
   z-index: -1;
 }
 
@@ -476,8 +481,7 @@ footer .footer-logo {
   background-color: #fff;
   border-radius: 15px;
   padding: 2rem;
-  height: 100%;
-  max-height: 46.7rem;
+  height: 46.7rem;
   position: relative;
   overflow: hidden;
 }
