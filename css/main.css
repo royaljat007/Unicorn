@@ -367,7 +367,10 @@ footer .footer-logo {
 }
 
 .home-banner {
+  background-image: url(../images/Unicorn_Home_Slide.jpg);
   border-bottom: 0.2rem solid #1b2f53;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .home-banner .home-banner-bg {
   position: absolute;
