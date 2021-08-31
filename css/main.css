@@ -71,6 +71,7 @@ a {
   transition: 0.2s ease;
   color: #7061F0;
 }
+
 a:hover {
   color: #1B2F53;
 }
@@ -82,8 +83,8 @@ html {
 body {
   font-family: "DM Sans", sans-serif;
   color: #1B2F53;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 img {
@@ -98,9 +99,10 @@ img {
   line-height: 2.1rem;
   display: inline-block;
   color: #1b2f53;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
+
 .cta-primary:hover {
   background-color: #7061f0;
   color: #fff !important;
@@ -113,9 +115,10 @@ img {
   color: #fff;
   text-decoration: none;
   display: inline-block;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
+
 .cta-secondary:hover {
   background-color: #fff;
 }
@@ -178,6 +181,7 @@ img {
   bottom: 0;
   z-index: -1;
 }
+
 .bg-accent-pink .bg-sm {
   width: 100%;
   height: 1.14rem;
@@ -185,6 +189,7 @@ img {
   margin-bottom: 2.3rem;
   z-index: 0;
 }
+
 .bg-accent-pink .bg-lg {
   width: 100%;
   height: 10rem;
@@ -203,6 +208,7 @@ img {
   z-index: -1;
   top: 65%;
 }
+
 .bg-accent-orange .bg-sm {
   width: 100%;
   height: 1.14rem;
@@ -210,12 +216,14 @@ img {
   margin-bottom: 2.3rem;
   z-index: 0;
 }
+
 .bg-accent-orange .bg-lg {
   width: 100%;
   height: 10rem;
   background: #fac72e;
   margin-bottom: 1.14rem;
 }
+
 .bg-accent-orange .bg-xl {
   width: 100%;
   height: 45.2rem;
@@ -241,9 +249,11 @@ header nav {
   background-color: #fff;
   border-bottom: 0.2rem solid #1b2f53;
 }
+
 header nav .nav-item {
   margin: 0 1rem;
 }
+
 header nav .nav-item > a {
   font-size: 1.6rem;
   font-weight: 500;
@@ -256,6 +266,7 @@ header nav .nav-item > a {
       -ms-flex-align: center;
           align-items: center;
 }
+
 header nav .nav-item .dropdown-toggle::after {
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -266,6 +277,7 @@ header nav .nav-item .dropdown-toggle::after {
   border-left: 0.5rem solid transparent;
   color: #7061f0;
 }
+
 header nav .nav-item .dropdown-menu {
   top: 6.9rem;
   left: 50%;
@@ -276,6 +288,7 @@ header nav .nav-item .dropdown-menu {
   border-radius: 0;
   padding: 2rem;
 }
+
 header nav .nav-item .dropdown-menu:before {
   content: "";
   display: inline-block;
@@ -288,6 +301,7 @@ header nav .nav-item .dropdown-menu:before {
   top: -3px;
   left: 40%;
 }
+
 header nav .nav-item .dropdown-menu li a {
   color: #fff;
   font-size: 1.6rem;
@@ -299,20 +313,25 @@ footer {
   background-color: #1b2f53;
   color: #fff;
 }
+
 footer .footer-heading {
   color: #fff;
   font-weight: 600;
   margin-bottom: 5.3rem;
 }
+
 footer .social-menu {
   margin-bottom: 9rem;
 }
+
 footer .social-menu li {
   margin-right: 2.9rem;
 }
+
 footer .social-menu li:last-child {
   margin-right: 0;
 }
+
 footer .social-menu a {
   background-color: #fff;
   color: #1b2f53;
@@ -329,35 +348,43 @@ footer .social-menu a {
           align-items: center;
   border-radius: 100px;
 }
+
 footer .social-menu a:hover {
   background-color: #7061f0;
   color: #fff !important;
 }
+
 footer .footer-menu {
   list-style: none;
   padding: 0;
 }
+
 footer .footer-menu li a {
   color: #fff;
   font-weight: 400;
   line-height: 3.2rem;
 }
+
 footer .footer-menu li a:hover {
   color: #7061f0;
 }
+
 footer .copyright p {
   font-size: 1.4rem;
   line-height: 2rem;
   margin: 0;
 }
+
 footer .copyright p a {
   color: #fff;
   text-decoration: underline;
   font-size: 1.4rem;
 }
+
 footer .copyright p a:hover {
   color: #7061f0;
 }
+
 footer .footer-logo {
   position: absolute;
   width: 100%;
@@ -372,36 +399,44 @@ footer .footer-logo {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .home-banner .home-banner-bg {
   position: absolute;
   z-index: -1;
 }
+
 .home-banner .home-banner-inner {
   padding-top: 10.6rem;
   padding-bottom: 10.3rem;
 }
+
 .home-banner .home-banner-inner .main-heading {
   color: #1b2f53;
   margin-bottom: 4.1rem;
 }
+
 .home-banner .home-banner-inner .sub-main {
   font-size: 3.6rem;
   color: #1b2f53;
   line-height: 4.6rem;
   margin-bottom: 2rem;
 }
+
 .home-banner .home-banner-bottom .home-banner-bottom-left {
   padding-top: 7rem;
   padding-right: 6rem;
 }
+
 .home-banner .home-banner-bottom .home-banner-bottom-left .low-opacity-heading {
   opacity: 0.5;
 }
+
 .home-banner .home-banner-bottom .home-banner-bottom-left .subtitle {
   margin-top: 2.8rem;
   margin-bottom: 1.5rem;
   line-height: 3.8rem;
 }
+
 .home-banner .gray-box {
   width: 41.9rem;
   height: 34.5rem;
@@ -416,15 +451,18 @@ footer .footer-logo {
   background-color: #fff0c2;
   border-bottom: 0.2rem solid #1b2f53;
 }
+
 .experience .experience-inner {
   background-color: #ffffff;
   position: relative;
   padding: 7rem 10rem 6rem;
 }
+
 .experience .experience-inner h5 {
   margin: 0;
   margin-bottom: 1.9rem;
 }
+
 .experience .experience-inner .experience-accent {
   position: absolute;
   top: 0;
@@ -437,17 +475,21 @@ footer .footer-logo {
   display: -ms-flexbox;
   display: flex;
 }
+
 .experience .experience-inner .experience-accent li {
   width: 1.5rem;
   background-color: #fff0c2;
   height: 100%;
 }
+
 .experience .experience-inner .experience-accent li:first-child {
   margin-right: 3rem;
 }
+
 .experience .experience-inner .experience-accent li:nth-child(2) {
   margin-right: 3rem;
 }
+
 .experience .experience-inner .experience-accent li:last-child {
   margin-right: 0rem;
 }
@@ -455,14 +497,17 @@ footer .footer-logo {
 .why-us {
   border-bottom: 0.2rem solid #1b2f53;
 }
+
 .why-us h1 {
   margin: 0;
   margin-bottom: 4.9rem;
 }
+
 .why-us .subtitle {
   margin-bottom: 4.9rem;
   line-height: 3.9rem;
 }
+
 .why-us .bg-lines {
   position: absolute;
   list-style: none;
@@ -473,11 +518,13 @@ footer .footer-logo {
   margin: 0;
   z-index: -1;
 }
+
 .why-us .bg-lines li {
   height: 2.9rem;
   background-color: #C5CAD3;
   margin-bottom: 1rem;
 }
+
 .why-us .why-us-card {
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
@@ -488,13 +535,16 @@ footer .footer-logo {
   position: relative;
   overflow: hidden;
 }
+
 .why-us .why-us-card .card-img {
   position: relative;
   z-index: 1;
 }
+
 .why-us .why-us-card .subtitle {
   margin-bottom: 1.5rem;
 }
+
 .why-us .why-us-card .bg-accent {
   position: absolute;
   top: 0;
@@ -505,31 +555,36 @@ footer .footer-logo {
   z-index: 0;
   right: 0;
 }
+
 .why-us .why-us-card .bg-accent .big-section {
   background-color: #7061F0;
   height: 12rem;
 }
+
 .why-us .why-us-card .bg-accent .small-section {
   background-color: #1B2F53;
   height: 3rem;
   margin-top: 1rem;
 }
 
-.banner-bottom {
+.core-banner-bottom {
   border-bottom: 0.2rem solid #1b2f53;
 }
-.banner-bottom .banner-bottom__title::before {
+
+.core-banner-bottom .banner-bottom__title::before {
   content: "";
   position: absolute;
   display: inline-block;
   background-image: url(images/);
 }
-.banner-bottom__subtitle {
+
+.core-banner-bottom__subtitle {
   max-width: 66.2rem;
   width: 100%;
   margin-bottom: 6.5rem;
 }
-.banner-bottom .service-card {
+
+.core-banner-bottom .service-card {
   background: #ffffff 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
@@ -546,7 +601,8 @@ footer .footer-logo {
   height: 100%;
   position: relative;
 }
-.banner-bottom .service-card .card-accent {
+
+.core-banner-bottom .service-card .card-accent {
   position: absolute;
   left: 0;
   right: 0;
@@ -554,25 +610,30 @@ footer .footer-logo {
   padding: 0;
   list-style: none;
 }
-.banner-bottom .service-card .card-accent .line-bg {
+
+.core-banner-bottom .service-card .card-accent .line-bg {
   background: #94ddee;
   height: 12rem;
   margin-bottom: 1.1rem;
 }
-.banner-bottom .service-card .card-accent .line-sm {
+
+.core-banner-bottom .service-card .card-accent .line-sm {
   background: #94ddee;
   height: 3rem;
   margin-bottom: 1rem;
 }
-.banner-bottom .service-card .card-img {
+
+.core-banner-bottom .service-card .card-img {
   position: relative;
   z-index: 1;
   margin-bottom: 3.4rem;
 }
-.banner-bottom .service-card .card-img img {
+
+.core-banner-bottom .service-card .card-img img {
   max-width: 17.2rem;
 }
-.banner-bottom .service-card .card-content .card-heading {
+
+.core-banner-bottom .service-card .card-content .card-heading {
   color: #7061f0;
   margin-bottom: 1.8rem;
 }
