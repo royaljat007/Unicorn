@@ -148,10 +148,10 @@
 }
 
 .brands-section {
-  background-color: #F7C7FF;
+  background-color: #f7c7ff;
   border-bottom: 0.2rem solid #1b2f53;
   overflow: hidden;
-  .row{
+  .row {
     background-color: #fff;
   }
   ul.brands-logo {
@@ -193,12 +193,12 @@
   }
 }
 
-.our-knowledge{
-  background-color: #DEDBE5;
+.our-knowledge {
+  background-color: #dedbe5;
   margin-bottom: 14.5rem;
   border-bottom: 0.2rem solid #1b2f53;
-  .img-accent-top{
-       height: 23rem;
+  .img-accent-top {
+    height: 23rem;
     width: 23rem;
     border-radius: 100%;
     border: 2.5rem solid #ed6b4d;
@@ -209,50 +209,61 @@
     display: block;
     right: 7rem;
   }
-  h1{
-    color: #1B2F53;
+  h1 {
+    color: #1b2f53;
   }
-  .subtitle{
-    color: #1B2F53;
+  .subtitle {
+    color: #1b2f53;
     font-family: $Span;
   }
-  .over-line-section{
+  .over-line-section {
     margin-bottom: -14rem;
   }
 }
-.footer-top{
+.footer-top {
   margin-bottom: -5rem;
-.get-in-touch{
-  background-image: url(../images/CTA_Graphic_1.svg);
-  background-size: cover;
-  padding: 5rem 7rem ;
-  color: #fff;
-  h6{
-    font-size: 3.6rem;
-    font-weight: bold;
-    font-family: $DM_Sans;
-    line-height: 4rem;
-    margin-bottom: 3.5rem;
-  }
-  .big-arrow-link {
-    color: #1B2F53;
-    font-size: 5.5rem;
-    text-decoration: underline;
-    font-family: $Span;
+  .get-in-touch {
+    background-image: url(../images/CTA_Graphic_1.svg);
+    background-size: cover;
+    padding: 5rem 7rem;
+    color: #fff;
+    h6 {
+      font-size: 3.6rem;
+      font-weight: bold;
+      font-family: $DM_Sans;
+      line-height: 4rem;
+      margin-bottom: 3.5rem;
+    }
+    .big-arrow-link {
+      color: #1b2f53;
+      font-size: 5.5rem;
+      border-bottom: 0.1rem solid;
+      font-family: $Span;
+    }
+    .big-arrow-link:hover{
+color: #ffffff;
+    }
+    .big-arrow-link::before {
+      content: "";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      margin-right: 1.2rem;
+      vertical-align: middle;
+      line-height: 2.2rem;
+    }
   }
 }
-}
-.our-result{
+.our-result {
   border-bottom: 0.2rem solid #1b2f53;
-  &-section-title{
+  &-section-title {
     width: calc(100% + 6rem);
     max-width: inherit;
   }
-  h1{
+  h1 {
     margin: 0;
     margin-bottom: 7.1rem;
   }
-  .subtitle{
+  .subtitle {
     margin-bottom: 4.9rem;
     line-height: 3.9rem;
     color: $dark-blue;
@@ -281,17 +292,17 @@
       left: 0;
       bottom: 3rem;
 
-      button{
+      button {
         &.owl-prev {
           margin-right: 2.4rem;
         }
-        span{
+        span {
           width: 5.9rem;
           height: 5.9rem;
           line-height: 5.9rem;
           font-size: 2rem;
           color: $dark-blue;
-          border: .2rem solid;
+          border: 0.2rem solid;
           border-radius: 50%;
           display: block;
         }
@@ -304,9 +315,9 @@
   border-bottom: 0.2rem solid $dark-blue;
   &-section-title {
     h1 {
-       span {
-         display: block;
-       }
+      span {
+        display: block;
+      }
     }
   }
   &-listing {

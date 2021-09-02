@@ -106,7 +106,7 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  color: #1B2F53;
+  color: #1b2f53;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -193,6 +193,14 @@ img {
   padding-bottom: 7rem;
 }
 
+.pe-7 {
+  padding-right: 7rem;
+}
+
+.ps-7 {
+  padding-left: 7rem;
+}
+
 .p-7 {
   padding: 7rem;
 }
@@ -248,7 +256,7 @@ img {
 .bg-accent-orange .bg-xl {
   width: 100%;
   height: 45.2rem;
-  background: #FFF0C2;
+  background: #fff0c2;
   margin-bottom: 1.14rem;
 }
 
@@ -267,6 +275,26 @@ img {
 .b-border {
   border-left: 0.2rem solid #1b2f53;
   border-right: 0.2rem solid #1b2f53;
+}
+
+.b-left {
+  border-left: 0.2rem solid #1b2f53;
+}
+
+.b-right {
+  border-right: 0.2rem solid #1b2f53;
+}
+
+.b-bottom {
+  border-bottom: 0.2rem solid #1b2f53;
+}
+
+.b-top {
+  border-top: 0.2rem solid #1b2f53;
+}
+
+.white-arrow {
+  color: #ffffff;
 }
 
 header nav {
@@ -549,7 +577,7 @@ footer .footer-logo {
 }
 
 .brands-section {
-  background-color: #F7C7FF;
+  background-color: #f7c7ff;
   border-bottom: 0.2rem solid #1b2f53;
   overflow: hidden;
 }
@@ -602,7 +630,7 @@ footer .footer-logo {
 }
 
 .our-knowledge {
-  background-color: #DEDBE5;
+  background-color: #dedbe5;
   margin-bottom: 14.5rem;
   border-bottom: 0.2rem solid #1b2f53;
 }
@@ -619,10 +647,10 @@ footer .footer-logo {
   right: 7rem;
 }
 .our-knowledge h1 {
-  color: #1B2F53;
+  color: #1b2f53;
 }
 .our-knowledge .subtitle {
-  color: #1B2F53;
+  color: #1b2f53;
   font-family: "span";
 }
 .our-knowledge .over-line-section {
@@ -646,10 +674,21 @@ footer .footer-logo {
   margin-bottom: 3.5rem;
 }
 .footer-top .get-in-touch .big-arrow-link {
-  color: #1B2F53;
+  color: #1b2f53;
   font-size: 5.5rem;
-  text-decoration: underline;
+  border-bottom: 0.1rem solid;
   font-family: "span";
+}
+.footer-top .get-in-touch .big-arrow-link:hover {
+  color: #ffffff;
+}
+.footer-top .get-in-touch .big-arrow-link::before {
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 1.2rem;
+  vertical-align: middle;
+  line-height: 2.2rem;
 }
 
 .our-result {
@@ -793,4 +832,42 @@ footer .footer-logo {
 .core-banner-bottom .service-card .card-content .card-heading {
   color: #7061f0;
   margin-bottom: 1.8rem;
+}
+
+.markets-support {
+  background-color: #e4f6fb;
+}
+
+.amazon-partner h5 {
+  color: #7061f0;
+  line-height: 5.4rem;
+}
+.amazon-partner h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+  line-height: 3.8rem;
+}
+.amazon-partner img {
+  max-width: 46rem;
+  margin: auto;
+}
+
+.work-with .card {
+  max-width: 95.6rem;
+  background-image: url(../images/Core_Services_Case_Studies_CTA.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.work-with .card .card-body {
+  max-width: 35%;
+  color: #ffffff;
+}
+.work-with .card .card-body .card-title {
+  margin-bottom: 1.5rem;
+  line-height: 3.8rem;
+}
+.work-with .card .card-body p {
+  line-height: 2.6rem;
 }

@@ -57,3 +57,42 @@
     }
   }
 }
+.markets-support {
+  background-color: #e4f6fb;
+}
+.amazon-partner {
+  h5 {
+    color: #7061f0;
+    line-height: 5.4rem;
+  }
+  h6 {
+    font-family: $DM_Sans;
+    font-weight: normal;
+    line-height: 3.8rem;
+  }
+  img {
+    max-width: 46rem;
+    margin: auto;
+  }
+}
+.work-with {
+  .card {
+    max-width: 95.6rem;
+    background-image: url(../images/Core_Services_Case_Studies_CTA.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    .card-body {
+      max-width: 35%;
+      color: #ffffff;
+      .card-title {
+        margin-bottom: 1.5rem;
+        line-height: 3.8rem;
+      }
+      p {
+        line-height: 2.6rem;
+      }
+    }
+  }
+}
