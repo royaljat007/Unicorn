@@ -67,6 +67,9 @@ img {
 .pb-7 {
   padding-bottom: 7rem;
 }
+.p-7{
+  padding: 7rem;
+}
 
 
 //  
@@ -136,7 +139,9 @@ img {
 .color-gray{
   color: #1b2f53;
 }
-
+.bg-light{
+  background-color: #fff !important;
+}
 //
 //Border
 //
@@ -280,3 +285,4 @@ footer {
     bottom: 1rem;
   }
 }
+
