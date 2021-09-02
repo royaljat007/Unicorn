@@ -24,3 +24,23 @@
     background-color: #fff;
   }
 }
+
+@mixin link-with-arrow {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  color: $dark-blue;
+  text-transform: uppercase;
+  border-bottom: .1rem solid ;
+
+  &:before {
+    content: "\f30b";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 1.2rem;
+    vertical-align: middle;
+    line-height: 2.2rem;
+  }
+  &:hover{
+    color: $purple;
+  }
+}
