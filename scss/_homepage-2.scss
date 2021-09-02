@@ -1,0 +1,87 @@
+.our-result{
+  border-bottom: 0.2rem solid #1b2f53;
+  &-section-title{
+    width: calc(100% + 6rem);
+    max-width: inherit;
+  }
+  h1{
+    margin: 0;
+    margin-bottom: 7.1rem;
+  }
+  .subtitle{
+    margin-bottom: 4.9rem;
+    line-height: 3.9rem;
+    color: $dark-blue;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    padding-bottom: 1.28rem;
+    font-weight: 700;
+  }
+  &-quote {
+    color: $purple;
+    h3 {
+      color: inherit;
+    }
+  }
+  &-auther {
+    padding: 1.5rem 4rem 8.8rem 0;
+    h6 {
+      font-family: $DM_Sans;
+      font-weight: 500;
+      margin-bottom: 3.6rem;
+    }
+  }
+  &-carousel {
+    .owl-nav {
+      position: absolute;
+      left: 0;
+      bottom: 3rem;
+
+      button{
+        &.owl-prev {
+          margin-right: 2.4rem;
+        }
+        span{
+          width: 5.9rem;
+          height: 5.9rem;
+          line-height: 5.9rem;
+          font-size: 2rem;
+          color: $dark-blue;
+          border: .2rem solid;
+          border-radius: 50%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.our-work {
+  border-bottom: 0.2rem solid $dark-blue;
+  &-section-title {
+    h1 {
+       span {
+         display: block;
+       }
+    }
+  }
+  &-listing {
+    > .row {
+      margin-top: -3.5rem;
+      justify-content: space-between;
+    }
+    > .row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  &-content {
+    max-width: 50rem;
+
+    h6 {
+      font-family: $DM_Sans;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: $purple;
+    }
+  }
+}

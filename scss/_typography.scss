@@ -25,7 +25,7 @@ h3 {
   margin: 1.1rem 0;
   font-size: 4.8rem;
   font-weight: 700;
-  line-height: 3.6rem;
+  line-height: 5.4rem;
 }
 
 h4 {
@@ -77,4 +77,10 @@ a {
   }
 }
 
+.text-dark-blue{
+  color: $dark-blue!important;
+}
 
+.link-with-arrow {
+  @include link-with-arrow; 
+}
