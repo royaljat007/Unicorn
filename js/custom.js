@@ -132,3 +132,7 @@ $( document ).ready(function() {
         }
     })
 });
+
+$(".contact-model-btn").click(function(){
+    $(".contact-main").toggleClass("hidden");
+  });

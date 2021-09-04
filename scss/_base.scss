@@ -302,3 +302,21 @@ footer {
     bottom: 1rem;
   }
 }
+
+.big-arrow-link {
+  color: #1b2f53;
+  font-size: 5.5rem;
+  border-bottom: 0.1rem solid;
+  font-family: $Span;
+}
+.big-arrow-link:hover{
+color: #ffffff;
+}
+.big-arrow-link::before {
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 1.2rem;
+  vertical-align: middle;
+  line-height: 2.2rem;
+}
