@@ -371,4 +371,14 @@
     color: $dark-blue;
     text-decoration: underline;
   }
+  .contact-accent{
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 10rem;
+    border: 1.5rem solid #1B2F53;
+    border-radius: 100px;
+  }
 }

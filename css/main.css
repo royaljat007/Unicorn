@@ -839,6 +839,17 @@ footer .footer-logo {
   color: #1B2F53;
   text-decoration: underline;
 }
+.contact-main .contact-accent {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  border: 1.5rem solid #1B2F53;
+  border-radius: 100px;
+}
 
 .core-banner-bottom {
   border-bottom: 0.2rem solid #1b2f53;
