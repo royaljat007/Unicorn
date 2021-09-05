@@ -168,6 +168,10 @@ img {
   margin-bottom: 5rem !important;
 }
 
+.mb--5 {
+  margin-bottom: -5rem;
+}
+
 .pt-5 {
   padding-top: 5rem !important;
 }
@@ -234,6 +238,12 @@ img {
   height: 10rem;
   background: #f7c7ff;
 }
+.bg-accent-pink .bg-xl {
+  width: 100%;
+  height: 45.2rem;
+  background: #f7c7ff;
+  margin-bottom: 1.14rem;
+}
 
 .bg-accent-orange {
   list-style: none;
@@ -265,6 +275,35 @@ img {
   height: 45.2rem;
   background: #fff0c2;
   margin-bottom: 1.14rem;
+}
+
+.bg-accent-sky {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bg-accent-sky .bg-sm {
+  width: 100%;
+  height: 1.14rem;
+  background: #E8F0FF;
+  margin-bottom: 2.3rem;
+  z-index: 0;
+}
+.bg-accent-sky .bg-lg {
+  width: 100%;
+  height: 10rem;
+  background: #E8F0FF;
+  margin-bottom: 1.14rem;
+}
+.bg-accent-sky .bg-xl {
+  width: 100%;
+  height: 45.2rem;
+  background: #E8F0FF;
 }
 
 .color-purple {
@@ -953,4 +992,66 @@ footer .footer-logo {
 
 .our-story-banner .banner__inner {
   background-color: #E8F0FF;
+}
+
+.our-story-banner-bottom {
+  border-bottom: 0.2rem solid #1b2f53;
+}
+.our-story-banner-bottom .banner-bottom__title::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url(images/);
+}
+.our-story-banner-bottom__subtitle {
+  max-width: 66.2rem;
+  width: 100%;
+  margin-bottom: 6.5rem;
+}
+.our-story-banner-bottom .service-card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 3.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.our-story-banner-bottom .service-card .card-accent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0;
+  list-style: none;
+}
+.our-story-banner-bottom .service-card .card-accent .line-bg {
+  background: #94ddee;
+  height: 12rem;
+  margin-bottom: 1.1rem;
+}
+.our-story-banner-bottom .service-card .card-accent .line-sm {
+  background: #94ddee;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+.our-story-banner-bottom .service-card .card-img {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3.4rem;
+}
+.our-story-banner-bottom .service-card .card-img img {
+  max-width: 17.2rem;
+}
+.our-story-banner-bottom .service-card .card-content .card-heading {
+  color: #7061f0;
+  margin-bottom: 1.8rem;
 }
