@@ -950,3 +950,7 @@ footer .footer-logo {
 .work-with .card .card-body p {
   line-height: 2.6rem;
 }
+
+.our-story-banner .banner__inner {
+  background-color: #E8F0FF;
+}
