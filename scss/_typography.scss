@@ -14,12 +14,25 @@ h1 {
   line-height: 9rem;
   color: #7061F0;
   margin-bottom: 4.5rem;
+   
+  @media screen and (max-width: $break-medium) {
+    font-size:4.4rem ;
+    line-height: 5.4rem;
+    margin-bottom: 3rem;
+  }
+
 }
 
 h2 {
   font-size: 5.5rem;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: $break-medium) {
+    font-size:3.2rem ;
+    line-height: 5.4rem;
+  }
+
 }
 
 h3 {
@@ -27,6 +40,11 @@ h3 {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 5.4rem;
+
+  @media screen and (max-width: $break-medium) {
+    font-size:2.8rem ;
+    line-height: 3.6rem;
+  }
 }
 
 h4 {
@@ -34,6 +52,12 @@ h4 {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 5.5rem;
+
+  @media screen and (max-width: $break-medium) {
+    font-size:3.6rem ;
+    line-height: 4.2rem;
+  }
+
 }
 
 h5 {
@@ -42,6 +66,11 @@ h5 {
   line-height: 5.4rem;
   font-weight: 600;
   color: #1B2F53;
+
+  @media screen and (max-width: $break-medium) {
+    font-size:3.6rem ;
+    line-height: 4.2rem;
+  }
 }
 
 h6 {
@@ -49,6 +78,11 @@ h6 {
   font-size: 2.8rem;
   font-weight: 700;
   line-height: 2.6rem;
+
+  @media screen and (max-width: $break-medium) {
+    font-size:2.8rem ;
+    line-height: 3.6rem;
+  }
 }
 //## Subtitle
 .subtitle {
@@ -56,6 +90,12 @@ h6 {
   font-weight: normal;
   font-size: 2.8rem;
   line-height: 3.8rem;
+
+  @media screen and (max-width: $break-medium) {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
 }
 //## Super title
 .super-title {

@@ -31,6 +31,11 @@
   color: $dark-blue;
   text-transform: uppercase;
   border-bottom: .1rem solid ;
+  
+  @media screen and (max-width: $break-medium) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 
   &:before {
     content: "\f30b";
