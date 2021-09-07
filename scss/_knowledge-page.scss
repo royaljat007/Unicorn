@@ -1,6 +1,7 @@
-.our-work-banner {
-  background-color: #7061f0;
+.knowledge-page-banner {
+  background-color: #beb8cc;
   position: relative;
+  z-index: 0;
   .banner-accent {
     list-style: none;
     padding: 0;
@@ -21,13 +22,16 @@
     }
   }
   .bg-img {
-    background-color: #fff;
-    background-image: url(../images/our-work.svg);
+    background-color: #f7c7ff;
+    background-image: url(../images/knowledge-page.svg);
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
+    background-size: 41%;
     padding-bottom: 20rem;
-    .our-work-select {
+    .subtitle{
+        color: $dark-blue;
+    }
+    .knowledge-page-select {
       font-size: 1.8rem;
       height: 5rem;
       border-radius: 0;
@@ -40,7 +44,7 @@
 }
 .overlay-banner {
   margin-top: -15rem;
-  .our-work-card {
+  .knowledge-page-card {
     border: 0;
     border-radius: 1rem;
     overflow: hidden;
@@ -48,7 +52,6 @@
     .card-body {
       font-size: 2.8rem;
       font-weight: normal;
-      
       padding: 1.5rem;
       .card-title {
         font-family: $DM_Sans;

@@ -49,3 +49,29 @@
     color: $purple;
   }
 }
+  @mixin down-arrow-link {
+    font-size: 5.5rem;
+    line-height: 5.4rem;
+    font-family: $Span;
+    color: $dark-blue;
+    
+    border-bottom: .1rem solid ;
+    
+    @media screen and (max-width: $break-medium) {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+  
+    &:before {
+      content: "\f309";
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      margin-right: 1.2rem;
+      vertical-align: middle;
+      line-height: 2.2rem;
+    }
+    &:hover{
+      color: $purple;
+    } 
+  
+}

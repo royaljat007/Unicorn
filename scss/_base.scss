@@ -220,6 +220,21 @@ img {
 .bg-light {
   background-color: #fff !important;
 }
+.bg-sky{
+  background-color: #2ABBDD;
+}
+.bg-light-green{
+  background-color: #50BCBA;
+}
+.bg-orange{
+  background-color: #E4674A;
+}
+.bg-red{
+  background-color: #E8694B;
+}
+.bg-purple{
+  background-color: #7061f0;
+}
 //
 //Border
 //
@@ -499,4 +514,7 @@ color: #ffffff;
   margin-right: 1.2rem;
   vertical-align: middle;
   line-height: 2.2rem;
+}
+.down-arrow-link{
+  @include down-arrow-link;
 }
