@@ -1,0 +1,149 @@
+.sherlock-feature {
+    border-bottom: 0.2rem solid #1b2f53;
+    .h1 {
+      margin: 0;
+      margin-bottom: 4.9rem;
+  
+      @media screen and (max-width: $break-medium) {
+        margin-bottom: 1.7rem;
+      }
+  
+    }
+    .subtitle {
+      margin-bottom: 4.9rem;
+      line-height: 3.9rem;
+    }
+    .bg-lines {
+      position: absolute;
+      list-style: none;
+      left: 0;
+      right: 0;
+      bottom: 16rem;
+      padding: 0;
+      margin: 0;
+      z-index: -1;
+  
+      @media screen and (max-width: $break-medium) {
+        // bottom: 9rem;
+      }
+  
+      li {
+        height: 2.9rem;
+        background-color: #B7AFF7;
+        margin-bottom: 1rem;
+      }
+    }
+    .why-us-card {
+      box-shadow: 0px 3px 6px #00000029;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      height: 46.7rem;
+      position: relative;
+      overflow: hidden;
+      
+      @media screen and (max-width: $break-medium) {
+        margin-top: 0!important;
+        margin-bottom: 3rem;
+      }
+  
+      .card-img {
+        position: relative;
+        z-index: 1;
+  
+        img {
+          width: auto;
+        }
+  
+      }
+      .subtitle {
+        margin-bottom: 1.5rem;
+      }
+      .bg-accent {
+        position: absolute;
+        top: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        z-index: 0;
+        right: 0;
+        .big-section {
+          background-color: #50BCBA;
+          height: 12rem;
+        }
+        .small-section {
+          background-color: #50BCBA;
+          height: 3rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+    &-carousel {
+      margin-bottom: 5rem;
+    }
+    .item {
+      padding: 1.2rem;
+  
+      &:nth-child(2){
+        padding-top: 5rem;
+      }
+  
+      &:nth-child(3){
+        padding-top: 10rem;
+      }
+    }
+    .owl-nav {
+      display: flex;
+      justify-content: space-between;
+  
+      button.owl-prev,
+      button.owl-next{
+        width: 5.9rem;
+        height: 5.9rem;
+        font-size: 3.6rem;
+        border: .2rem solid $dark-blue;
+        border-radius: 50%;
+        position: relative;
+        z-index: 9;
+      }
+    }
+    .owl-dots {
+      position: relative;
+      margin-top: -4rem;
+      display: flex;
+      justify-content: center;
+  
+      .owl-dot {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border:.1rem solid $dark-blue;
+        margin-left: .8rem;
+        margin-right: .8rem;
+  
+        &.active {
+          background:$dark-blue
+        }
+      }
+    }
+  }
+
+  .sherlock-reports{
+      .bg-accent{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 50%;
+          background-color: #7061F0;
+          opacity: 0.1;
+          z-index: -1;
+      }
+      .img-accent{
+        position: absolute;
+        top: 0;
+        right: 1.5rem;
+        width: 47.8rem;
+      }
+  }
