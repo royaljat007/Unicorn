@@ -13,7 +13,7 @@ h1,
   font-size: 8rem;
   font-weight: 600;
   line-height: 9rem;
-  color: #7061F0;
+  color: #7061f0;
   margin-bottom: 4.5rem;
 }
 @media screen and (max-width: 767px) {
@@ -68,7 +68,7 @@ h5 {
   font-size: 4.4rem;
   line-height: 5.4rem;
   font-weight: 600;
-  color: #1B2F53;
+  color: #1b2f53;
 }
 @media screen and (max-width: 767px) {
   h5 {
@@ -90,8 +90,17 @@ h6 {
   }
 }
 
+ul {
+  font-size: 1.8rem;
+  padding-left: 1.5rem;
+}
+ul li {
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 .subtitle {
-  color: #7061F0;
+  color: #7061f0;
   font-weight: normal;
   font-size: 2.8rem;
   line-height: 3.8rem;
@@ -123,10 +132,10 @@ a {
   text-decoration: none;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #7061F0;
+  color: #7061f0;
 }
 a:hover {
-  color: #1B2F53;
+  color: #1b2f53;
 }
 
 .text-dark-blue {
@@ -321,6 +330,13 @@ img {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+.bg-accent-pink .bg-xs {
+  width: 100%;
+  height: 0.8rem;
+  background: #f7c7ff;
+  margin-bottom: 2.3rem;
+  z-index: 0;
 }
 .bg-accent-pink .bg-sm {
   width: 100%;
@@ -1857,4 +1873,46 @@ footer .footer-logo {
   top: 0;
   right: 1.5rem;
   width: 47.8rem;
+}
+
+.privacy {
+  background-color: #f9fbff;
+}
+.privacy .img-accent {
+  position: absolute;
+  left: 5rem;
+  top: 0;
+}
+.privacy .bg-accent-pink {
+  position: relative;
+  z-index: 0;
+}
+.privacy .bg-accent-pink li {
+  background-color: #B7AFF7;
+}
+.privacy .bg-accent-pink .bg-lg {
+  margin-bottom: 0;
+}
+.privacy .bg-ring-accent {
+  width: 27rem;
+  height: 27rem;
+  border: 3rem solid #e8f1ff;
+  position: absolute;
+  right: -10rem;
+  border-radius: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 0;
+}
+.privacy .privacy-inner {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.privacy .privacy-inner .privacy-title {
+  font-family: "DM Sans", sans-serif;
+  margin-top: 4rem;
 }

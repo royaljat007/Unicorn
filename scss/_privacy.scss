@@ -1,0 +1,41 @@
+.privacy {
+  background-color: #f9fbff;
+  .img-accent{
+      position: absolute;
+      left: 5rem;
+      top: 0;
+  }
+  .bg-accent-pink{
+      position:relative;
+
+      z-index: 0;
+      li{
+      background-color: #B7AFF7;
+      }
+      .bg-lg{
+          margin-bottom: 0;
+      }
+    }
+  .bg-ring-accent{
+    width: 27rem;
+    height: 27rem;
+    border: 3rem solid #e8f1ff;
+    position: absolute;
+    right: -10rem;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }  
+  .privacy-inner {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    .privacy-title {
+      font-family: $DM_Sans;
+      margin-top: 4rem;
+    }
+  }
+}
