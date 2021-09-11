@@ -1,0 +1,55 @@
+.lets-banner-inner {
+  background: url(../images/contact-bg.svg);
+  background-image: url(../images/contact-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  h6.contact-subtitle {
+      font-weight: normal;
+      line-height: 3.8rem;
+      margin-bottom: 2.9rem;
+  }
+  .content-form {
+    padding: 7rem;
+    background-color: #1b2f53;
+    .form-box {
+      form {
+        margin-bottom: 3rem;
+      }
+      .form-group {
+        input.form-control {
+          border: 0;
+          border-radius: 0;
+          height: 7rem;
+          border-bottom: 0.1rem solid $dark-blue;
+          font-size: 1.8rem;
+        }
+        textarea.form-control {
+          border: 0;
+          border-radius: 0;
+          min-height: 25rem;
+          font-size: 1.8rem;
+        }
+        ::placeholder {
+          font-size: 1.8rem;
+        }
+      }
+
+      .contact-submit {
+        color: #fff;
+        margin-top: 3rem;
+        &:hover {
+          color: $purple;
+        }
+      }
+      .contact-sub {
+        p {
+          color: #fff;
+          font-weight: normal;
+        }
+        .link-with-arrow {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
