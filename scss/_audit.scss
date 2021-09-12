@@ -1,36 +1,16 @@
-.sherlock-feature {
-  border-bottom: 0.2rem solid #1b2f53;
-  .h1 {
-    margin: 0;
-    margin-bottom: 4.9rem;
-
-    @media screen and (max-width: $break-medium) {
-      margin-bottom: 1.7rem;
-    }
-  }
-  .subtitle {
-    margin-bottom: 4.9rem;
-    line-height: 3.9rem;
-  }
-  .bg-lines {
+.audit-feature {
+  position: relative;
+  .bg-block {
     position: absolute;
-    list-style: none;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 16rem;
-    padding: 0;
-    margin: 0;
+    height: 29.9rem;
+    background-color: #f7c7ff;
     z-index: -1;
-
-    @media screen and (max-width: $break-medium) {
-      // bottom: 9rem;
-    }
-
-    li {
-      height: 2.9rem;
-      background-color: #b7aff7;
-      margin-bottom: 1rem;
-    }
+  }
+  .bg-accent-white{
+      z-index: 0;
   }
   .why-us-card {
     box-shadow: 0px 3px 6px #00000029;
@@ -67,11 +47,11 @@
       z-index: 0;
       right: 0;
       .big-section {
-        background-color: #50bcba;
+        background-color: $purple;
         height: 12rem;
       }
       .small-section {
-        background-color: #50bcba;
+        background-color: $purple;
         height: 3rem;
         margin-top: 1rem;
       }
@@ -127,7 +107,7 @@
   }
 }
 
-.sherlock-reports {
+.audit-reports {
   .bg-accent {
     position: absolute;
     bottom: 0;
@@ -145,7 +125,7 @@
     width: 47.8rem;
   }
 }
-.sherlock-customisation {
+.audit-customisation {
   .customisation-inner {
     background: #f3f7ff;
     .img-accent {
