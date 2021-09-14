@@ -854,7 +854,7 @@ footer .footer-logo {
   }
 }
 .home-banner .home-banner-bottom .home-banner-bottom-left {
-  padding-top: 7rem;
+  padding-top: 10rem;
   padding-right: 6rem;
 }
 @media screen and (max-width: 767px) {
@@ -981,7 +981,7 @@ footer .footer-logo {
   bottom: 16rem;
   padding: 0;
   margin: 0;
-  z-index: -1;
+  z-index: 0;
 }
 .why-us .bg-lines li {
   height: 2.9rem;
@@ -1185,13 +1185,13 @@ footer .footer-logo {
   height: 23rem;
   width: 23rem;
   border-radius: 100%;
-  border: 2.5rem solid #ed6b4d;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -12rem;
+  top: 0rem;
   display: block;
   right: 7rem;
+  z-index: 0;
 }
 .our-knowledge h1 {
   color: #1b2f53;
@@ -1259,6 +1259,26 @@ footer .footer-logo {
 .our-result-section-title {
   width: calc(100% + 6rem);
   max-width: inherit;
+}
+.our-result .banner-accent {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.our-result .banner-accent .bg-dark {
+  height: 1.7rem;
+  background-color: #000;
+  margin-bottom: 1.5rem;
+}
+.our-result .banner-accent .bg-gray {
+  height: 1.7rem;
+  background-color: #EAEAEA;
+  margin-bottom: 1.5rem;
 }
 .our-result h1 {
   margin: 0;
@@ -1342,6 +1362,17 @@ footer .footer-logo {
   font-weight: 500;
   margin-bottom: 1.5rem;
   color: #7061F0;
+}
+
+.contact-popup .bg-accent {
+  background-color: #FFF0C2;
+  opacity: 0.75;
+  height: 40rem;
+  z-index: -1;
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  right: 0;
 }
 
 .contact-main {
@@ -1436,7 +1467,7 @@ footer .footer-logo {
           transform: translateX(-50%);
   width: 10rem;
   height: 10rem;
-  border: 1.5rem solid #1B2F53;
+  border: 1.5rem solid #1b2f53;
   border-radius: 100px;
 }
 
@@ -1446,6 +1477,39 @@ footer .footer-logo {
     border: none;
   }
 }
+.why-us .img-accent {
+  background-image: url(../images/Home_Performance_Icon.svg);
+  height: 31.6rem;
+  width: 31.6rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10rem;
+  display: block;
+  opacity: 0.1;
+  right: -15rem;
+}
+.why-us > .bg-accent {
+  height: 37.6%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background-color: #c5cad3;
+}
+
+.our-work .yellow-box {
+  position: absolute;
+  right: 0;
+  bottom: -7rem;
+  width: 40rem;
+  z-index: -1;
+  height: 25rem;
+  background: #FFF0C2;
+  opacity: 0.75;
+}
+
 .core-banner-bottom {
   border-bottom: 0.2rem solid #1b2f53;
 }
