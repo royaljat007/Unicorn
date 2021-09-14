@@ -1,0 +1,14 @@
+.success-story-banner {
+  background-color: #d3f7e5;
+  .banner__inner {
+    background-color: #e8f0ff;
+    background-image: url(../images/success-banner.svg);
+    background-position: top right;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    .banner__img {
+      position: absolute;
+      bottom: -4.5rem;
+    }
+  }
+}

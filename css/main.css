@@ -1613,7 +1613,7 @@ footer .footer-logo {
 }
 
 .our-work-banner {
-  background-color: #7061f0;
+  background-color: #b7b0f7;
   position: relative;
 }
 .our-work-banner .banner-accent {
@@ -1665,6 +1665,7 @@ footer .footer-logo {
 .overlay-banner .our-work-card .card-body {
   font-size: 2.8rem;
   font-weight: normal;
+  background-color: #7061F0;
   padding: 1.5rem;
 }
 .overlay-banner .our-work-card .card-body .card-title {
@@ -2058,6 +2059,90 @@ footer .footer-logo {
   color: #fff;
 }
 
+.knowledge-page-banner {
+  background-color: #beb8cc;
+  position: relative;
+  z-index: 0;
+}
+.knowledge-page-banner .banner-accent {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.knowledge-page-banner .banner-accent .bg-dark {
+  height: 1.7rem;
+  background-color: black;
+  margin-bottom: 1.5rem;
+}
+.knowledge-page-banner .banner-accent .bg-light {
+  height: 1.7rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+.knowledge-page-banner .bg-img {
+  background-color: #f7c7ff;
+  background-image: url(../images/knowledge-page.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 41%;
+  padding-bottom: 20rem;
+}
+.knowledge-page-banner .bg-img .subtitle {
+  color: #1B2F53;
+}
+.knowledge-page-banner .bg-img .knowledge-page-select {
+  font-size: 1.8rem;
+  height: 5rem;
+  border-radius: 0;
+  width: 100%;
+  max-width: 36.5rem;
+  border: 1px solid #7061f0;
+  margin-top: 5rem;
+}
+
+.overlay-banner {
+  margin-top: -15rem;
+}
+.overlay-banner .knowledge-page-card {
+  border: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+.overlay-banner .knowledge-page-card .card-body {
+  font-size: 2.8rem;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+.overlay-banner .knowledge-page-card .card-body .card-title {
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.overlay-banner .knowledge-page-card .card-body .card-caption {
+  font-size: 2.2rem;
+  color: #1b2f53;
+}
+.overlay-banner .card-lg .card-img {
+  height: 34rem;
+  overflow: hidden;
+}
+.overlay-banner .card-lg .card-img img {
+  width: 100%;
+}
+.overlay-banner .card-sm .card-img {
+  height: 18rem;
+  overflow: hidden;
+}
+.overlay-banner .card-sm .card-img img {
+  width: 100%;
+}
+
 .audit-feature {
   position: relative;
 }
@@ -2212,4 +2297,19 @@ footer .footer-logo {
 .custom-analysis p {
   font-size: 2.8rem;
   line-height: 3.8rem;
+}
+
+.success-story-banner {
+  background-color: #d3f7e5;
+}
+.success-story-banner .banner__inner {
+  background-color: #e8f0ff;
+  background-image: url(../images/success-banner.svg);
+  background-position: top right;
+  background-size: 45%;
+  background-repeat: no-repeat;
+}
+.success-story-banner .banner__inner .banner__img {
+  position: absolute;
+  bottom: -4.5rem;
 }
