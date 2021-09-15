@@ -118,6 +118,16 @@ img {
 //
 //Background Accsent
 //
+.banner-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/banner-accent.svg);
+  background-size: contain;
+  width: 5.5%;
+  height: 16.3rem;
+}
+
 .bg-accent-pink {
   list-style: none;
   padding: 0;
