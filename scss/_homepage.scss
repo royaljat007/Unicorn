@@ -452,7 +452,7 @@
 
     @media screen and (max-width: $break-medium) {
       padding: 3rem;
-      background-position: center right 35%;
+      background-position: center right 35% !important; 
       background-repeat: no-repeat;
     }
     @media screen and (max-width: $break-x-medium) {

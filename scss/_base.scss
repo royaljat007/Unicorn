@@ -349,10 +349,12 @@ header {
         font-size: 1.6rem;
         font-weight: 500;
         display: block;
-        color: #1b2f53 !important;
+        color: #1b2f53;
         display: flex;
         align-items: center;
-
+        &:hover {
+          color: $purple;
+        }
         @media screen and (max-width: $break-x-medium) {
           font-size: 2.8rem;
           line-height: 3.8rem;
@@ -376,23 +378,19 @@ header {
         }
       }
       .dropdown-menu {
-        top: 6.9rem;
+        top: 4.5rem;
         left: 50%;
         transform: translateX(-50%);
-        background: #7061f0;
         border: 0;
         border-radius: 0;
-        padding: 2rem;
-        &:before {
-          content: "";
-          display: inline-block;
-          background: #7061f0;
-          width: 20px;
-          height: 20px;
-          transform: rotate(133deg) translateX(-50%);
-          position: absolute;
-          top: -3px;
-          left: 40%;
+        padding: 4rem 2rem 2rem;
+        background: url(../images/Menu_Dropdown.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (max-width: $break-x-medium) {
+          position: static;
+          background: transparent;
         }
         li {
           a {
@@ -400,6 +398,10 @@ header {
             font-size: 1.6rem;
             padding: 1.2rem 2rem;
             display: block;
+            background: transparent;
+            @media screen and (max-width: $break-x-medium) {
+              color: #fff;
+            }
           }
         }
       }

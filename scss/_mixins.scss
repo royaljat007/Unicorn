@@ -58,7 +58,7 @@
     border-bottom: .1rem solid ;
     
     @media screen and (max-width: $break-medium) {
-      font-size: 1.8rem;
+      font-size: 1.8rem !important;
       line-height: 2.4rem;
     }
     @media screen and (max-width: $break-x-medium) {

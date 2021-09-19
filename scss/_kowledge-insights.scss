@@ -1,0 +1,124 @@
+.kowledge-post-banner {
+  background-color: #fffbf0;
+  .banner__inner {
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+    background-color: #eef4ff;
+    background-image: url(../images/post.svg);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: top right;
+    @media screen and (max-width: $break-x-medium) {
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: $break-x-medium) {
+          margin-bottom: 5rem;
+          justify-content: center;
+      }
+    }
+    .profile-img {
+      margin-right: 3rem;
+    }
+
+    .profile-body {
+        text-align: left;
+      p.list-head {
+        margin-bottom: 1rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.kowledge-post {
+  background-color: #f9fbff;
+  @media screen and (max-width: $break-medium) {
+    background-color: #fff;
+  }
+  .img-accent {
+    position: absolute;
+    left: 5rem;
+    top: 0;
+    @media screen and (max-width: $break-medium) {
+      left: 23rem;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .bg-accent-pink {
+    position: relative;
+
+    z-index: 0;
+    li {
+      background-color: #b7aff7;
+    }
+    .bg-lg {
+      margin-bottom: 0;
+    }
+  }
+  .bg-ring-accent {
+    width: 27rem;
+    height: 27rem;
+    border: 3rem solid #e8f1ff;
+    position: absolute;
+    left: -11rem;
+    border-radius: 100%;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  .kowledge-post-head {
+    h4 {
+      color: $purple;
+    }
+  }
+  .kowledge-post-inner {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: $break-x-medium) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .kowledge-post-title {
+      font-family: $DM_Sans;
+      margin-top: 4rem;
+    }
+  }
+
+  .bg-accent-pink {
+    .bg-xs,
+    .bg-sm {
+      @media screen and (max-width: $break-medium) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.perv-next-btn {
+    background-color:  #E8F0FF;
+    .perv-next-btn-inner {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
