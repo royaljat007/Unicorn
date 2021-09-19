@@ -124,8 +124,20 @@ img {
 //
 //Background Accsent
 //
-
-
+.home-banner {
+  .banner-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/banner-accent.svg);
+    background-size: contain;
+    width: 5.5%;
+    height: 16.3rem;
+    @media screen and (max-width: $break-medium) {
+      display: none;
+    }
+  }
+}
 .bg-accent-pink {
   list-style: none;
   padding: 0;
@@ -436,7 +448,7 @@ header {
       z-index: 99;
       height: auto !important;
       padding: 6rem 0 15.8rem;
-      transition: .3s ease;
+      transition: 0.3s ease;
       &::before {
         content: "";
         position: absolute;
@@ -451,13 +463,13 @@ header {
         height: 9rem;
         transform: rotate(180deg);
       }
-    
-    &.collapse:not(.show) {
-      left: 50rem;
-      display: block !important;
-      transition: .3s ease;
-  }
-}
+
+      &.collapse:not(.show) {
+        left: 50rem;
+        display: block !important;
+        transition: 0.3s ease;
+      }
+    }
   }
   .header-social-menu {
     display: none;
@@ -465,7 +477,7 @@ header {
       display: flex;
       padding: 0 3rem;
       margin-top: 6rem;
-      li {  
+      li {
         display: inline-block;
         a {
           width: 4.2rem;
@@ -606,9 +618,8 @@ footer {
   }
 }
 
-
 .container {
   @media screen and (max-width: $break-medium) {
-          max-width: 656px;
+    max-width: 656px;
   }
 }

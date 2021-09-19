@@ -336,6 +336,21 @@ img {
     padding: 3rem;
   }
 }
+.home-banner .banner-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/banner-accent.svg);
+  background-size: contain;
+  width: 5.5%;
+  height: 16.3rem;
+}
+@media screen and (max-width: 767px) {
+  .home-banner .banner-accent {
+    display: none;
+  }
+}
+
 .bg-accent-pink {
   list-style: none;
   padding: 0;
