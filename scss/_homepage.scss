@@ -455,6 +455,9 @@
       background-position: center right 35%;
       background-repeat: no-repeat;
     }
+    @media screen and (max-width: $break-x-medium) {
+      background-position: center;
+    }
 
     .big-arrow-link {
       color: #fff;

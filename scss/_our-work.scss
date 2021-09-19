@@ -27,7 +27,7 @@
     padding-bottom: 20rem;
     background-color: #fff;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       bottom: 0;
@@ -41,7 +41,11 @@
       z-index: 0;
       @media screen and (max-width: $break-medium) {
         background-size: auto;
-        opacity: .4;
+        opacity: 0.4;
+      }
+      @media screen and (max-width: $break-x-medium) {
+        background-size: 75%;
+        opacity: .8;
       }
     }
     @media screen and (max-width: $break-medium) {
@@ -58,13 +62,19 @@
       border: 1px solid #7061f0;
       margin-top: 5rem;
     }
-    >div{
+    > div {
       z-index: 0;
     }
   }
 }
 .overlay-banner {
   margin-top: -15rem;
+  .row {
+    @media screen and (max-width: $break-x-medium) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
   .our-work-card {
     border: 0;
     border-radius: 1rem;
@@ -80,27 +90,30 @@
         color: #fff;
         margin-top: 0;
         margin-bottom: 1.5rem;
+        @media screen and (max-width: $break-x-medium) {
+          font-size: 2.5rem;
+        }
       }
       .card-caption {
         font-size: 2.2rem;
         color: #1b2f53;
       }
     }
-  
+
     .card-lg {
       .card-img {
         position: relative;
         padding-bottom: 65%;
-       img {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-       }
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
     .card-sm {
@@ -108,18 +121,18 @@
         position: relative;
         padding-bottom: 65%;
         img {
-        position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
-}
 }
 
 .our-result-section-title {

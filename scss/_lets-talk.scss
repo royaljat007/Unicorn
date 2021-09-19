@@ -3,14 +3,35 @@
   background-image: url(../images/contact-bg.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  @media screen and (max-width: $break-medium) {
+    background-size: 175%;
+  }
+  @media screen and (max-width: $break-x-medium) {
+    padding: 5rem 2rem !important;
+  }
   h6.contact-subtitle {
-      font-weight: normal;
-      line-height: 3.8rem;
-      margin-bottom: 2.9rem;
+    font-weight: normal;
+    line-height: 3.8rem;
+    margin-bottom: 2.9rem;
+  }
+  .line-list {
+    @media screen and (max-width: $break-medium) {
+      text-align: left;
+      margin-bottom: 3rem;
+    }
   }
   .content-form {
     padding: 7rem;
     background-color: #1b2f53;
+    @media screen and (max-width: $break-medium) {
+      padding: 4rem;
+      text-align: left;
+      margin-bottom: -3rem;
+    }
+    @media screen and (max-width: $break-x-medium) {
+      padding: 5rem 4rem; 
+      margin-bottom: -10rem;
+    }
     .form-box {
       form {
         margin-bottom: 3rem;
@@ -22,15 +43,30 @@
           height: 7rem;
           border-bottom: 0.1rem solid $dark-blue;
           font-size: 1.8rem;
+          @media screen and (max-width: $break-medium) {
+            height: 5rem;
+            font-size: 1.5rem;
+          }
+          @media screen and (max-width: $break-x-medium) {
+            height: 5rem;
+          }
         }
         textarea.form-control {
           border: 0;
           border-radius: 0;
           min-height: 25rem;
           font-size: 1.8rem;
+          @media screen and (max-width: $break-medium) {
+            min-height: 20rem;
+            font-size: 1.5rem;
+          }
+          
         }
         ::placeholder {
           font-size: 1.8rem;
+          @media screen and (max-width: $break-x-medium) {
+            font-size: 1.5rem;
+          }
         }
       }
 
@@ -48,6 +84,9 @@
         }
         .link-with-arrow {
           color: #fff;
+          @media screen and (max-width: $break-x-medium) {
+            font-size: 1.8rem;
+          }
         }
       }
     }

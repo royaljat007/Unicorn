@@ -61,7 +61,9 @@
       font-size: 1.8rem;
       line-height: 2.4rem;
     }
-  
+    @media screen and (max-width: $break-x-medium) {
+      font-size: 3.5rem;
+    }
     &:before {
       content: "\f309";
       font-weight: 900;
