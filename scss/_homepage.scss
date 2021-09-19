@@ -3,6 +3,7 @@
   border-bottom: 0.2rem solid #1b2f53;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center top;
 
   @media screen and (max-width: $break-medium) {
     background-size: 135%;
@@ -34,6 +35,8 @@
 
       @media screen and (max-width: $break-medium) {
         margin-bottom: 3.3rem;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
       }
     }
   }
@@ -69,6 +72,12 @@
     bottom: 0;
     right: -7px;
     z-index: -1;
+
+    @media screen and (max-width: $break-medium) {
+      height: 15rem;
+      width: 100vw;
+    }
+
   }
 }
 
@@ -250,10 +259,17 @@
       width: 5.9rem;
       height: 5.9rem;
       font-size: 3.6rem;
-      border: 0.2rem solid $dark-blue;
       border-radius: 50%;
       position: relative;
       z-index: 9;
+      background-image: url(../images/right.svg);
+      background-size: contain;
+      span {
+        opacity: 0;
+      }
+    }
+    button.owl-prev { 
+      background-image: url(../images/left.svg);
     }
   }
   .owl-dots {
@@ -321,10 +337,17 @@
         width: 5.9rem;
         height: 5.9rem;
         font-size: 3.6rem;
-        border: 0.2rem solid $dark-blue;
         border-radius: 50%;
         position: relative;
         z-index: 9;
+        background-image: url(../images/right.svg);
+        background-size: contain;
+        span {
+          opacity: 0;
+        }
+      }
+      button.owl-prev { 
+        background-image: url(../images/left.svg);
       }
     }
   }
@@ -339,6 +362,14 @@
     display: block;
     opacity: 0.1;
     right: 7rem;
+
+    @media screen and (max-width: $break-medium) {
+      width: 19.2rem;
+      height: 19.2rem;
+      right: 0 ;
+      top: -10rem;
+    }
+
   }
   .img-accent-bottom {
     background-image: url(../images/Home_Performance_Icon.svg);
@@ -351,6 +382,14 @@
     display: block;
     opacity: 0.1;
     left: 7rem;
+
+    @media screen and (max-width: $break-medium) {
+      width: 19.2rem;
+      height: 19.2rem;
+      left: 0 ;
+      bottom: -10rem;
+    }
+
   }
 }
 
@@ -374,6 +413,19 @@
     display: block;
     right: 7rem;
     z-index: 0;
+
+    @media screen and (max-width: $break-medium) {
+      width: 18rem;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  
+  }
+  &-text {
+    padding-left: 5.7rem;
   }
   h1 {
     color: #1b2f53;
@@ -429,7 +481,7 @@ footer {
     }
     .col-md-12.mt-10 {
       @media screen and (max-width: $break-medium) {
-        margin-top: 21rem;
+        margin-top: 24rem;
       }
     }
   }
@@ -463,6 +515,9 @@ footer {
   h1 {
     margin: 0;
     margin-bottom: 7.1rem;
+    @media screen and (max-width: $break-medium) {
+        margin-bottom: 3rem;
+    }
   }
   .subtitle {
     margin-bottom: 4.9rem;
@@ -472,6 +527,10 @@ footer {
     border-bottom: 1px solid;
     padding-bottom: 1.28rem;
     font-weight: 700;
+
+    @media screen and (max-width: $break-medium) {
+      margin-bottom: 4rem;
+    }
   }
   &-quote {
     color: $purple;
@@ -481,6 +540,11 @@ footer {
   }
   &-auther {
     padding: 1.5rem 4rem 8.8rem 0;
+    
+    @media screen and (max-width: $break-medium) {
+      padding: 1.5rem 8rem 0 0;
+    }
+
     h6 {
       font-family: $DM_Sans;
       font-weight: 500;
@@ -493,19 +557,36 @@ footer {
       left: 0;
       bottom: 3rem;
 
-      button {
-        &.owl-prev {
-          margin-right: 2.4rem;
-        }
+      @media screen and (max-width: $break-medium) {
+        display: flex;
+        flex-direction: column;
+        left: auto;
+        right: 0;
+        bottom: 0;
+      }
+
+      button.owl-prev,
+      button.owl-next {
+        width: 5.9rem;
+        height: 5.9rem;
+        font-size: 3.6rem;
+        border-radius: 50%;
+        position: relative;
+        z-index: 9;
+        background-image: url(../images/right.svg);
+        background-size: contain;
+        transform: rotate(90deg);
         span {
-          width: 5.9rem;
-          height: 5.9rem;
-          line-height: 5.9rem;
-          font-size: 2rem;
-          color: $dark-blue;
-          border: 0.2rem solid;
-          border-radius: 50%;
-          display: block;
+          opacity: 0;
+        }
+      }
+      button.owl-prev { 
+        background-image: url(../images/left.svg);
+        margin-right: 2.4rem;
+
+        @media screen and (max-width: $break-medium) {
+          margin-right: 0;
+          margin-bottom: 2.4rem;
         }
       }
     }
@@ -596,11 +677,15 @@ footer {
 
       @media screen and (max-width: $break-medium) {
         height: 5.7rem;
+        max-width: 100%;
       }
     }
     .form-name {
       width: 100%;
       max-width: 39.2rem;
+      @media screen and (max-width: $break-medium) {
+        max-width: 100%;
+      }
     }
     .form-text {
       width: 100%;
@@ -685,5 +770,10 @@ footer {
     height: 25rem;
     background: #FFF0C2;
     opacity: 0.75;
+    
+    @media screen and (max-width: $break-medium) {
+      height: 15rem;
+      width: 100vw;
+    }
   }
 }
