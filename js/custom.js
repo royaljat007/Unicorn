@@ -48,4 +48,8 @@ $(".contact-model-btn").click(function () {
   $(".contact-main").toggleClass("hidden");
 });
 
+// Body overflow
 
+$(".navbar-toggler").click(function () {
+  $("body").toggleClass("overflow-hidden");
+});

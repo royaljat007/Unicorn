@@ -94,9 +94,15 @@ img {
   }
   .pt-10 {
     padding-top: 10rem;
+    @media screen and (max-width: $break-medium) {
+      padding-top: 5rem;
+    }
   }
   .pb-10 {
     padding-bottom: 10rem;
+    @media screen and (max-width: $break-medium) {
+      padding-bottom: 5rem;
+    }
   }
   .pt-7 {
     padding-top: 3rem;
@@ -118,15 +124,7 @@ img {
 //
 //Background Accsent
 //
-.banner-accent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url(../images/banner-accent.svg);
-  background-size: contain;
-  width: 5.5%;
-  height: 16.3rem;
-}
+
 
 .bg-accent-pink {
   list-style: none;
@@ -258,6 +256,7 @@ img {
     width: 100%;
     height: 45.2rem;
     background: #e8f0ff;
+    margin-bottom: 0;
   }
 }
 
@@ -437,7 +436,28 @@ header {
       z-index: 99;
       height: auto !important;
       padding: 6rem 0 15.8rem;
-    }
+      transition: .3s ease;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/mobile-menu.svg);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 3rem;
+        display: block;
+        width: 8.5rem;
+        height: 9rem;
+        transform: rotate(180deg);
+      }
+    
+    &.collapse:not(.show) {
+      left: 50rem;
+      display: block !important;
+      transition: .3s ease;
+  }
+}
   }
   .header-social-menu {
     display: none;
@@ -445,7 +465,7 @@ header {
       display: flex;
       padding: 0 3rem;
       margin-top: 6rem;
-      li {
+      li {  
         display: inline-block;
         a {
           width: 4.2rem;
@@ -583,5 +603,12 @@ footer {
       display: inline-block;
       margin-right: 1rem;
     }
+  }
+}
+
+
+.container {
+  @media screen and (max-width: $break-medium) {
+          max-width: 656px;
   }
 }
