@@ -1449,6 +1449,15 @@ footer .footer-logo {
   padding: 0;
 }
 
+.brands-section ul.brands-logo-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (min-width: 767px) {
   .brands-section ul.brands-logo-carousel {
     display: none;
@@ -1560,6 +1569,7 @@ footer .footer-logo {
 @media screen and (max-width: 767px) {
   .our-knowledge .img-accent-top {
     width: 18rem;
+    right: 2rem;
   }
 }
 
@@ -1614,6 +1624,7 @@ footer .footer-logo {
     padding: 3rem;
     background-position: center right 35% !important;
     background-repeat: no-repeat;
+    margin-bottom: -8rem;
   }
 }
 

@@ -367,6 +367,12 @@
   }
   ul.brands-logo-carousel {
     padding: 0;
+    
+    .owl-stage {
+      display: flex;
+      align-items: center;
+    }
+    
     @media screen and (min-width: $break-medium) {
       display: none;
     }
@@ -463,6 +469,7 @@
 
     @media screen and (max-width: $break-medium) {
       width: 18rem;
+      right: 2rem;
     }
 
     svg {
@@ -507,6 +514,7 @@
       padding: 3rem;
       background-position: center right 35% !important; 
       background-repeat: no-repeat;
+      margin-bottom: -8rem;
     }
     @media screen and (max-width: $break-x-medium) {
       background-position: center;
