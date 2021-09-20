@@ -128,10 +128,10 @@ img {
   .banner-accent {
     position: absolute;
     top: 0;
-    left: -8.3rem;
+    left: -7rem;
     background: url(../images/banner-accent.svg);
     background-size: contain;
-    width: 7.3rem;
+    width: 6rem;
     height: 16.3rem;
     @media screen and (max-width: $break-medium) {
       display: none;
@@ -512,9 +512,19 @@ footer {
     color: #fff;
     font-weight: 600;
     margin-bottom: 5.3rem;
+
+    @media screen and (max-width: $break-medium) {
+      margin-top: 6rem;
+    }
+
   }
   .social-menu {
     margin-bottom: 9rem;
+
+    @media screen and (max-width: $break-medium) {
+      margin-bottom: 3rem;
+    }
+
     li {
       margin-right: 2.9rem;
       &:last-child {
