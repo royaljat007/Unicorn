@@ -1,17 +1,54 @@
 .kowledge-post-banner {
   background-color: #fffbf0;
+  position: relative;
+  .banner-accent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+   .bg-dark {
+    height: 1.7rem;
+    background-color: #000;
+    margin-bottom: 1.5rem;
+  }
+  .bg-purple {
+    height: 1.7rem;
+    background-color: $purple;
+    margin-bottom: 1.5rem;
+  }
+}
   .banner__inner {
-    padding-top: 18rem;
+    padding-top: 15rem;
     padding-bottom: 8rem;
     background-color: #eef4ff;
     background-image: url(../images/post.svg);
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: top right;
+    z-index: 1;
     @media screen and (max-width: $break-x-medium) {
         padding-top: 8rem;
         padding-bottom: 5rem;
         text-align: center;
+    }
+    &::after {
+        content: "";
+    width: 40rem;
+    height: 30rem;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 0;
+    right: 0;
+}
+.banner__img {
+  position: relative;
+  z-index: 1;
+}
     }
     .profile {
       display: flex;
@@ -35,8 +72,6 @@
       }
     }
   }
-}
-
 .kowledge-post {
   background-color: #f9fbff;
   @media screen and (max-width: $break-medium) {

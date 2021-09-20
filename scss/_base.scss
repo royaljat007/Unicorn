@@ -512,19 +512,16 @@ footer {
     color: #fff;
     font-weight: 600;
     margin-bottom: 5.3rem;
-
     @media screen and (max-width: $break-medium) {
-      margin-top: 6rem;
+      margin-bottom: 2.5rem;
+      margin-top: 3rem;
     }
-
   }
   .social-menu {
     margin-bottom: 9rem;
-
     @media screen and (max-width: $break-medium) {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
-
     li {
       margin-right: 2.9rem;
       &:last-child {

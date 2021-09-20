@@ -1,5 +1,66 @@
+.sherlock-banner {
+  .banner__inner {
+    &::before {
+      content: "";
+      background-image: url(../images/sherlock-accent.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13rem;
+      height: 15rem;
+      position: absolute;
+      top: 0;
+      left: 5rem;
+      @media screen and (max-width: $break-medium) {
+        opacity: .5;
+      }
+    }
+    &::after {
+      content: "";
+      background-image: url(../images/banner-accent.svg);
+      background-repeat: no-repeat;
+      width: 8rem;
+      height: 30rem;
+      position: absolute;
+      top: 0;
+      right: -8rem;
+      @media screen and (max-width: $break-medium) {
+        display: none;
+      }
+    }
+    .banner__caption {
+      @media screen and (max-width: $break-medium) {
+        padding-top: 0 !important;
+      }
+    }
+    .banner__img {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.sherlock-sub {
+  @media screen and (max-width: $break-medium) {
+    margin-top: 3rem;
+  }
+}
+.our-work-bg {
+  background-image: url(../images/our-work-bg.svg);
+  background-size: contain;
+  background-position: center 145%;
+  background-repeat: no-repeat;
+}
 .sherlock-feature {
   border-bottom: 0.2rem solid #1b2f53;
+  position: relative;
+  >.bg-accent {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 40%;
+   background-color: #B7AFF7;
+   z-index: -1;
+  }
   .h1 {
     margin: 0;
     margin-bottom: 4.9rem;
@@ -17,10 +78,10 @@
     list-style: none;
     left: 0;
     right: 0;
-    bottom: 16rem;
+    bottom: 18.5rem;
     padding: 0;
     margin: 0;
-    z-index: -1;
+    z-index: 0;
 
     @media screen and (max-width: $break-medium) {
       // bottom: 9rem;
@@ -29,8 +90,11 @@
     li {
       height: 2.9rem;
       background-color: #b7aff7;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
+  }
+  .why-us-carousel {
+    margin-bottom: 3rem;
   }
   .why-us-card {
     box-shadow: 0px 3px 6px #00000029;
@@ -82,15 +146,23 @@
   }
   .item {
     padding: 1.2rem;
+  }
 
-    &:nth-child(2) {
-      padding-top: 5rem;
-    }
-
-    &:nth-child(3) {
-      padding-top: 10rem;
+  .owl-stage {
+    .active {
+      + {
+        .active {
+          padding-top: 5rem;
+          + {
+            .active {
+              padding-top: 10rem;
+            }
+          }
+        }
+      }
     }
   }
+
   .owl-nav {
     display: flex;
     justify-content: space-between;
@@ -100,10 +172,17 @@
       width: 5.9rem;
       height: 5.9rem;
       font-size: 3.6rem;
-      border: 0.2rem solid $dark-blue;
       border-radius: 50%;
       position: relative;
       z-index: 9;
+      background-image: url(../images/right.svg);
+      background-size: contain;
+      span {
+        opacity: 0;
+      }
+    }
+    button.owl-prev {
+      background-image: url(../images/left.svg);
     }
   }
   .owl-dots {
@@ -125,8 +204,21 @@
       }
     }
   }
+  .owl-stage {
+    .active {
+      + {
+        .active {
+          padding-top: 5rem;
+          + {
+            .active {
+              padding-top: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
 .sherlock-reports {
   .bg-accent {
     position: absolute;
@@ -140,9 +232,16 @@
   }
   .img-accent {
     position: absolute;
-    top: 0;
+    top: 0rem;
     right: 1.5rem;
     width: 47.8rem;
+    @media screen and (max-width: $break-medium) {
+      right: 0;
+      left: 0;
+    }
+    svg {
+      width: 100%;
+    }
   }
 }
 .sherlock-customisation {
@@ -152,6 +251,12 @@
       position: absolute;
       right: 10rem;
       max-width: 17.2rem;
+      @media screen and (max-width: $break-medium) {
+        right: 2rem;
+        top: 2rem;
+        max-width: 22.2rem;
+        opacity: .6;
+      }
     }
     h6 {
       font-family: $Span;
@@ -159,7 +264,15 @@
     .subtitle {
       font-family: $Span;
     }
+    .customisation-left {
+      @media screen and (max-width: $break-medium) {
+        padding: 0;
+      }
+    }
     .customisation-right {
+      @media screen and (max-width: $break-medium) {
+        padding-bottom: 4rem;
+      }
       p {
         font-size: 2.8rem;
         line-height: 3.8rem;
@@ -168,8 +281,17 @@
   }
 }
 .custom-analysis {
+  
   .row {
     background-color: #fff0c2;
+    @media screen and (max-width: $break-medium) {
+      padding-bottom: 4rem;
+    }
+    .col-md-6 {
+      @media screen and (max-width: $break-medium) {
+        padding: 0;
+      }
+    }
   }
   p {
     font-size: 2.8rem;

@@ -2,30 +2,62 @@
   position: relative;
   &:before {
     content: "";
-    background-image: url(../images/banner-accent.svg);
-    background-repeat: no-repeat;
     background-color: #b5e7f3;
     position: absolute;
     display: block;
     left: 0;
     right: 0;
     top: 0;
-    height: 47%;
+    height: 52%;
     z-index: -1;
     @media screen and (max-width: $break-medium) {
       background: #fff;
     }
     @media screen and (max-width: $break-x-medium) {
-   background-image: none;
+      background-image: none;
+    }
+  }
+  .banner-accent-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 41%;
+    transform: translateY(-50%);
+    z-index: -1;
+    .bg-dark {
+      height: 1.7rem;
+      background-color: black;
+      margin-bottom: 1.5rem;
+    }
+    .bg-light {
+      height: 1.7rem;
+      background-color: #fff;
+      margin-bottom: 1.5rem;
     }
   }
   .lets-banner-inner {
-    background:#fff;
-    background-image: url(../images/contact-bg.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    @media screen and (max-width: $break-medium) {
-      background-size: 175%;
+    background: #fff;
+    background-image: url(../images/contact-bg-top.svg),
+      url(../images/contact-bg-bottom.svg);
+    background-size: 90%, contain;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    background-position: top, center 85%;
+    &::before {
+      content: "";
+      background-image: url(../images/banner-accent.svg);
+      background-repeat: no-repeat;
+      width: 8rem;
+      height: 30rem;
+      position: absolute;
+      top: 0;
+      left: -7.5rem;
+      @media screen and (max-width: $break-medium) {
+        display: none;
+      }
     }
     @media screen and (max-width: $break-x-medium) {
       padding: 5rem 2rem !important;
@@ -45,6 +77,8 @@
     .content-form {
       padding: 7rem;
       background-color: #1b2f53;
+      position: relative;
+      z-index: 1;
       @media screen and (max-width: $break-medium) {
         padding: 4rem;
         text-align: left;
