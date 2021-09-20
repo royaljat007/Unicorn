@@ -13,10 +13,6 @@
     background-size: 1088px;
   }
 
-  @media screen and (max-width: 991px) {
-    background-size: 1260px ;
-  }
-
   @media screen and (max-width: $break-medium) {
     background-size: 135%;
     background-position: center top 13%;
@@ -124,6 +120,7 @@
       height: 15rem;
       width: 100vw;
     }
+
   }
 }
 
@@ -314,7 +311,7 @@
         opacity: 0;
       }
     }
-    button.owl-prev {
+    button.owl-prev { 
       background-image: url(../images/left.svg);
     }
   }
@@ -398,7 +395,7 @@
           opacity: 0;
         }
       }
-      button.owl-prev {
+      button.owl-prev { 
         background-image: url(../images/left.svg);
       }
     }
@@ -418,9 +415,10 @@
     @media screen and (max-width: $break-medium) {
       width: 19.2rem;
       height: 19.2rem;
-      right: 0;
+      right: 0 ;
       top: -10rem;
     }
+
   }
   .img-accent-bottom {
     background-image: url(../images/Home_Performance_Icon.svg);
@@ -437,9 +435,10 @@
     @media screen and (max-width: $break-medium) {
       width: 19.2rem;
       height: 19.2rem;
-      left: 0;
+      left: 0 ;
       bottom: -10rem;
     }
+
   }
 }
 
@@ -473,6 +472,7 @@
       width: 100%;
       height: auto;
     }
+  
   }
   &-text {
     padding-left: 5.7rem;
@@ -508,7 +508,7 @@
 
     @media screen and (max-width: $break-medium) {
       padding: 3rem;
-      background-position: center right 35% !important;
+      background-position: center right 35% !important; 
       background-repeat: no-repeat;
       margin-bottom: -8rem;
     }
@@ -567,22 +567,22 @@ footer {
     right: 0;
     bottom: 0;
     z-index: -1;
-    .bg-dark {
-      height: 1.7rem;
-      background-color: #000;
-      margin-bottom: 1.5rem;
-    }
-    .bg-gray {
-      height: 1.7rem;
-      background-color: #eaeaea;
-      margin-bottom: 1.5rem;
-    }
+   .bg-dark {
+    height: 1.7rem;
+    background-color: #000;
+    margin-bottom: 1.5rem;
   }
+  .bg-gray {
+    height: 1.7rem;
+    background-color: #EAEAEA;
+    margin-bottom: 1.5rem;
+  }
+}
   h1 {
     margin: 0;
     margin-bottom: 7.1rem;
     @media screen and (max-width: $break-medium) {
-      margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
   }
   .subtitle {
@@ -606,7 +606,7 @@ footer {
   }
   &-auther {
     padding: 1.5rem 4rem 8.8rem 0;
-
+    
     @media screen and (max-width: $break-medium) {
       padding: 1.5rem 8rem 0 0;
     }
@@ -646,7 +646,7 @@ footer {
           opacity: 0;
         }
       }
-      button.owl-prev {
+      button.owl-prev { 
         background-image: url(../images/left.svg);
         margin-right: 2.4rem;
 
@@ -698,12 +698,17 @@ footer {
       color: $purple;
     }
   }
+  &-accent {
+    position: absolute;
+    left: -8rem;
+    z-index: -1;
+  }
 }
 
 .contact-popup {
   .bg-accent {
-    background-color: #fff0c2;
-    opacity: 0.75;
+    background-color: #FFF0C2;
+    opacity:.75;
     height: 40rem;
     z-index: -1;
     position: absolute;
@@ -823,7 +828,7 @@ footer {
     opacity: 0.1;
     right: -15rem;
   }
-  > .bg-accent {
+  >.bg-accent {
     height: 37.6%;
     position: absolute;
     left: 0;
@@ -842,9 +847,9 @@ footer {
     width: 40rem;
     z-index: -1;
     height: 25rem;
-    background: #fff0c2;
+    background: #FFF0C2;
     opacity: 0.75;
-
+    
     @media screen and (max-width: $break-medium) {
       height: 15rem;
       width: 100vw;
