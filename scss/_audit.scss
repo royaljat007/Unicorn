@@ -125,6 +125,20 @@
       padding-top: 10rem;
     }
   }
+  .owl-stage {
+    .active {
+      + {
+        .active {
+          padding-top: 5rem;
+          + {
+            .active {
+              padding-top: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .owl-nav {
     display: flex;
     justify-content: space-between;

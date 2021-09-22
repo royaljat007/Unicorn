@@ -74,13 +74,10 @@
   .who-help {
     overflow: hidden;
     position: relative;
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
     
-    &:before {
-      content: "";
-    }
-    .b-border {
-      border-left: 0;
-    }
     .container {
       &:after {
         content: "";
@@ -90,27 +87,38 @@
         top: 0;
         bottom: 0;
         left: 100% ; 
+        background-color: #ED6B4D;
       }
     }
+    
     &-color-1{
-      background-color: #ED6B4D;
-      // .container {
-      //   &:after {
-      //   }
-      // }
+      background-color: #fff;
+      background-image: url(../images/Group_4447.svg), linear-gradient(to bottom, #fef9ea 50%, #ffffff 0% );;
+    }
+    &-color-2{
+      background-color: #fff;
+      background-image: url(../images/Group_4445.svg), linear-gradient(to bottom, #f8f7fe 50%, #ffffff 0% );;
+
+      .container {
+        &:after {
+          background-color: #F7C7FF;
+        }
+      }
     }
     &-carousel {
       &-outer {
         height: 100%;
         background-color: #fff;
         padding: 16rem 6rem;
+        
+        h6 {
+          font-size: 2rem;
+          border-bottom: 1px solid;
+          padding: 1.8rem 0;
+          margin-bottom: 6rem;
+        }
       }
-      h6 {
-        font-size: 2rem;
-        border-bottom: 1px solid;
-        padding: 1.8rem 0;
-        margin-bottom: 6rem;
-      }
+      
       h5 {
         font-size: 2.8rem;
         line-height: 3.6rem;
@@ -136,6 +144,118 @@
             background: $dark-blue;
           }
         }
+      }
+    }
+    &-banner__caption{
+      h4 {
+        margin-bottom: 3rem;
+        &:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 52px solid #50BCBA;
+          border-top: 26px solid transparent;
+          border-bottom: 26px solid transparent;
+          position: absolute;
+          left: -30px;
+        }
+      }
+    }
+    &-color-2{
+      .who-help-banner__caption{
+        h4{
+          &:before {
+            border-left: 52px solid #7061F0;
+          }
+        }
+      }
+    }
+    &-card {
+      position: relative;
+      text-align: center;
+      padding-top: 2.4rem ;
+      padding-bottom: 2.4rem ;
+      h6 {
+        font-family: $Span;
+        position: absolute;
+        width: 100%;
+        bottom: 6rem;
+      }
+      img {
+        border-radius: 1.5rem;
+        box-shadow: 0 3px 6px #00000029;
+      }
+    }
+  }
+
+  .timeline {
+    .container {
+      background-color: #FEF7FF;
+      background-image: linear-gradient(to right, #FEF7FF 79%, #E8F0FF 0% );
+      &:after {
+        content: "";
+        width: 400%;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100% ; 
+        background-color: #F7C7FF;
+      }
+    }
+    &-img-section {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    &-box-outer {
+      padding-top: 5rem;
+    }
+    &-box {
+      padding: 2rem 0;
+      display: flex;
+      
+      &-date {
+        flex: 0 0 33%;
+        p {
+          font-size: 2rem;
+          line-height: 3rem;
+          font-weight: 700;
+          padding-left: 5rem;
+          background-image: url(../images/Audit_Icon_1.svg);
+          background-repeat: no-repeat;
+          background-position: left top .2rem;
+          background-size: 2.7rem;
+        }
+      }
+      &-content {
+        border-bottom: 1px solid ;
+        padding-bottom: 3rem;
+
+        h6 {
+          margin-top: 0;
+          color: #7061F0;
+          a {
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+      &-more{
+          padding-left: 33%;
+          padding-top: 2rem;
       }
     }
   }

@@ -1,3 +1,181 @@
+.culture-banner {
+  > .container {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7rem;
+      top: 0;
+      background-image: url(../Images/audit-banner-arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 7rem;
+      height: 10rem;
+    }
+  }
+  .banner__inner {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 5rem;
+      top: 0;
+      background-image: url(../Images/Home_Performance_Icon.svg);
+      background-size: cover;
+      background-position: bottom;
+      width: 25.9rem;
+      height: 12.7rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 40rem;
+      height: 32rem;
+      background: #4FE099;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+}
+.culture-feature {
+  position: relative;
+  .bg-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 29.9rem;
+    background-color: #f7c7ff;
+    z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0rem;
+      bottom: 0px;
+      background-image: url(../Images/mobile-menu.svg);
+      filter: sepia(1);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 7rem;
+      height: 10rem;
+    }
+  }
+  .bg-accent-white {
+    z-index: 0;
+  }
+  .why-us-card {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    height: 46.7rem;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: $break-medium) {
+      margin-top: 0 !important;
+      margin-bottom: 3rem;
+    }
+
+    .card-img {
+      position: relative;
+      z-index: 1;
+
+      img {
+        width: auto;
+      }
+    }
+    .subtitle {
+      margin-bottom: 1.5rem;
+    }
+    .bg-accent {
+      position: absolute;
+      top: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      left: 0;
+      z-index: 0;
+      right: 0;
+      .big-section {
+        background-color: $purple;
+        height: 12rem;
+      }
+      .small-section {
+        background-color: $purple;
+        height: 3rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+  &-carousel {
+    margin-bottom: 5rem;
+  }
+  .item {
+    padding: 1.2rem;
+
+    &:nth-child(2) {
+      padding-top: 5rem;
+    }
+
+    &:nth-child(3) {
+      padding-top: 10rem;
+    }
+  }
+  .owl-stage {
+    .active {
+      + {
+        .active {
+          padding-top: 5rem;
+          + {
+            .active {
+              padding-top: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .owl-nav {
+    display: flex;
+    justify-content: space-between;
+
+    button.owl-prev,
+    button.owl-next {
+      width: 5.9rem;
+      height: 5.9rem;
+      font-size: 3.6rem;
+      border: 0.2rem solid $dark-blue;
+      border-radius: 50%;
+      position: relative;
+      z-index: 9;
+    }
+  }
+  .owl-dots {
+    position: relative;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: center;
+
+    .owl-dot {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 0.1rem solid $dark-blue;
+      margin-left: 0.8rem;
+      margin-right: 0.8rem;
+
+      &.active {
+        background: $dark-blue;
+      }
+    }
+  }
+}
+
+
 .culture-why-us {
     border-bottom: 0.2rem solid #1b2f53;
     h1 {
