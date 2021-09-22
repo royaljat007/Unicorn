@@ -9,6 +9,16 @@ $(document).ready(function () {
       },
     },
   });
+  $(".who-help-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
   $(".why-us-carousel").owlCarousel({
     loop: true,
     margin: 0,

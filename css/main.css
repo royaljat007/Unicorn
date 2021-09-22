@@ -1997,6 +1997,85 @@ footer .footer-logo {
   margin-bottom: 1.8rem;
 }
 
+.our-story-banner-bottom .link-with-arrow {
+  font-size: 5.5rem;
+  line-height: 5.4rem;
+  text-transform: inherit;
+  font-family: "span";
+}
+
+.who-help {
+  overflow: hidden;
+  position: relative;
+}
+
+.who-help:before {
+  content: "";
+}
+
+.who-help .b-border {
+  border-left: 0;
+}
+
+.who-help .container:after {
+  content: "";
+  width: 400%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+}
+
+.who-help-color-1 {
+  background-color: #ED6B4D;
+}
+
+.who-help-carousel-outer {
+  height: 100%;
+  background-color: #fff;
+  padding: 16rem 6rem;
+}
+
+.who-help-carousel h6 {
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  padding: 1.8rem 0;
+  margin-bottom: 6rem;
+}
+
+.who-help-carousel h5 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  margin-bottom: 3rem;
+}
+
+.who-help-carousel .owl-dots {
+  position: relative;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 1px solid;
+}
+
+.who-help-carousel .owl-dots .owl-dot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.1rem solid #1B2F53;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.who-help-carousel .owl-dots .owl-dot.active {
+  background: #1B2F53;
+}
+
 .our-work-banner {
   background-color: #b7b0f7;
   position: relative;
