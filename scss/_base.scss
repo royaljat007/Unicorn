@@ -347,7 +347,7 @@ header {
       }
       > a.nav-link {
         font-size: 1.6rem;
-        font-weight: 500;
+        font-weight: bold;
         display: block;
         color: #1b2f53;
         display: flex;
@@ -378,16 +378,17 @@ header {
         }
       }
       .dropdown-menu {
-        top: 4.5rem;
+        top: 3.5rem;
         left: 50%;
         transform: translateX(-50%);
         border: 0;
         border-radius: 0;
         padding: 4rem 2rem 2rem;
-        background: url(../images/Menu_Dropdown.svg);
+        background-image: url(../images/Menu_Dropdown.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-width: 17.1rem;
         @media screen and (max-width: $break-x-medium) {
           position: static;
           background: transparent;
@@ -396,9 +397,25 @@ header {
           a {
             color: #fff;
             font-size: 1.6rem;
-            padding: 1.2rem 2rem;
-            display: block;
+            padding: 0.62rem 0.5rem 0.62rem;
             background: transparent;
+            display: flex;
+            align-items: center;
+            &::before {
+              content: "-";
+              font-size: 3rem;
+              line-height: 0;
+              width: 0;
+              overflow: hidden;
+              margin-left: 0.2rem;
+              transition: 0.3s ease;
+            }
+            &:hover {
+              &:before {
+                width: 15px;
+                overflow: revert;
+              }
+            }
             @media screen and (max-width: $break-x-medium) {
               color: #fff;
             }

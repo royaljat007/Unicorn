@@ -39,7 +39,7 @@ $(document).ready(function () {
     loop: false,
     margin: 22,
     nav: true,
-    center:true,
+    center: true,
     responsive: {
       0: {
         items: 1.5,
@@ -63,3 +63,14 @@ $(".contact-model-btn").click(function () {
 $(".navbar-toggler").click(function () {
   $("body").toggleClass("overflow-hidden");
 });
+
+//Toggle on hover
+
+if ($(window).width() >= 1024) {
+  $("#navbarDropdown").hover(function () {
+    $(".hoverDropdown").toggleClass("show");
+  });
+  $(".hoverDropdown").hover(function () {
+    $(".hoverDropdown").toggleClass("show");
+  });
+}

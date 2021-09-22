@@ -6,7 +6,7 @@
   background-position: center top;
 
   @media screen and (max-width: 1399px) {
-    background-size: 1260px ;
+    background-size: 1260px;
   }
 
   @media screen and (max-width: 1199px) {
@@ -17,7 +17,7 @@
     // background-size: 100%;
     // background-position: center top;
     // background-image: url(../images/mobile-banner-homepage.png);
-    background:none ;
+    background: none;
     position: relative;
   }
 
@@ -26,7 +26,7 @@
   //     content: "";
   //     display: block;
   //     width: 100%;
-      
+
   //   }
   // }
 
@@ -36,7 +36,7 @@
   }
   .home-banner-inner {
     padding-top: 10.6rem;
-    padding-bottom: 10.3rem;
+    padding-bottom: 6.3rem;
 
     @media screen and (max-width: $break-medium) {
       padding-top: 4.3rem;
@@ -46,8 +46,8 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: bottom center;
-      margin-left: -.75rem;
-      margin-right: -.75rem;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
       padding-top: 20vw;
     }
 
@@ -57,24 +57,23 @@
 
       @media screen and (max-width: $break-medium) {
         padding-left: 1.5rem;
-        padding-right: 1.5rem; 
+        padding-right: 1.5rem;
       }
       br {
         @media screen and (max-width: $break-medium) {
           display: none;
         }
       }
-      @media screen and (max-width:413px) {
+      @media screen and (max-width: 413px) {
         font-size: 3.4rem;
         line-height: 4.4rem;
       }
-
     }
     .sub-main {
       font-size: 3.6rem;
       color: #1b2f53;
       line-height: 4.6rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
 
       @media screen and (max-width: $break-medium) {
         margin-bottom: 3.3rem;
@@ -82,8 +81,16 @@
         line-height: 3.6rem;
       }
     }
+    .cta-primary {
+      width: 17.2rem;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center;
+    }
   }
   .home-banner-bottom {
+    padding-left: 5rem !important;
+    padding-bottom: 3rem;
     .home-banner-bottom-left {
       padding-top: 22rem;
       padding-right: 6rem;
@@ -96,7 +103,7 @@
         padding-top: 2rem;
       }
 
-      @media screen and (max-width:991px){
+      @media screen and (max-width: 991px) {
         width: 100%;
         max-width: 100%;
         flex: 0 0 auto;
@@ -121,7 +128,8 @@
       }
     }
     .home-banner-bottom-right {
-      @media screen and (max-width:991px){
+      text-align: center;
+      @media screen and (max-width: 991px) {
         width: 100%;
         max-width: 100%;
         flex: 0 0 auto;
@@ -130,16 +138,15 @@
     }
   }
   .gray-box {
-
-    width: 46.7rem;
-    height: 41.4rem;
+    width: 43.4rem;
+    height: 43.4rem;
     background-color: #e8f0ff;
     position: absolute;
     bottom: 0;
     right: -7px;
     z-index: -1;
 
-    @media screen and (max-width:1399px){
+    @media screen and (max-width: 1399px) {
       width: 41.9rem;
       height: 37.5rem;
     }
@@ -148,7 +155,6 @@
       height: 15rem;
       width: 100vw;
     }
-
   }
 }
 
@@ -165,7 +171,7 @@
   .experience-inner {
     background-color: #ffffff;
     position: relative;
-    padding: 7rem 10rem 6rem;
+    padding: 7rem 11rem 6rem;
 
     @media screen and (max-width: $break-medium) {
       padding: 4rem 1.5rem 14.5rem;
@@ -230,9 +236,13 @@
       margin-bottom: 1.7rem;
     }
   }
+  .col-md-8 {
+    padding-left: 2.2rem;
+  }
   .subtitle {
     margin-bottom: 4.9rem;
     line-height: 3.9rem;
+    max-width: 66.2rem;
   }
   .bg-lines {
     position: absolute;
@@ -339,7 +349,7 @@
         opacity: 0;
       }
     }
-    button.owl-prev { 
+    button.owl-prev {
       background-image: url(../images/left.svg);
     }
   }
@@ -362,6 +372,9 @@
       }
     }
   }
+  .why-us-carousel {
+    margin-bottom: 0;
+  }
 }
 
 .brands-section {
@@ -373,18 +386,27 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-
-  
+  .subtitle {
+    font-size: 4.4rem;
+    font-family: $Span;
+    line-height: 5.4rem;
+    max-width: 46.6rem;
+  }
+  p {
+    max-width: 46.6rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
   .b-border {
     @media screen and (max-width: $break-medium) {
       border-left: 0.2rem solid #1b2f53;
       border-right: 0.2rem solid #1b2f53;
     }
   }
-  
 
   .row {
     background-color: #fff;
+    padding-bottom: 0;
   }
   ul.brands-logo {
     padding: 0;
@@ -406,12 +428,12 @@
   }
   ul.brands-logo-carousel {
     padding: 0;
-    
+
     .owl-stage {
       display: flex;
       align-items: center;
     }
-    
+
     @media screen and (min-width: $break-medium) {
       display: none;
     }
@@ -438,19 +460,20 @@
           opacity: 0;
         }
       }
-      button.owl-prev { 
+      button.owl-prev {
         background-image: url(../images/left.svg);
       }
     }
   }
   .img-accent-top {
     background-image: url(../images/Home_Performance_Icon.svg);
-    height: 31.6rem;
+    height: 15.4rem;
     width: 31.6rem;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
     position: absolute;
-    top: -15rem;
+    top: 0rem;
     display: block;
     opacity: 0.1;
     right: 7rem;
@@ -458,10 +481,9 @@
     @media screen and (max-width: $break-medium) {
       width: 19.2rem;
       height: 19.2rem;
-      right: 0 ;
+      right: 0;
       top: -10rem;
     }
-
   }
   .img-accent-bottom {
     background-image: url(../images/Home_Performance_Icon.svg);
@@ -478,10 +500,9 @@
     @media screen and (max-width: $break-medium) {
       width: 19.2rem;
       height: 19.2rem;
-      left: 0 ;
+      left: 0;
       bottom: -10rem;
     }
-
   }
 }
 
@@ -489,11 +510,42 @@
   background-color: #dedbe5;
   margin-bottom: 14.5rem;
   border-bottom: 0.2rem solid #1b2f53;
+  position: relative;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 0;
   }
+  .banner-accent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
 
+    @media screen and (max-width: $break-medium) {
+      position: static;
+    }
+
+    .bg-light {
+      height: 1.7rem;
+      background-color: #000;
+      margin-bottom: 1.5rem;
+    }
+  }
+  h1 {
+    margin: 0;
+    margin-bottom: 7.1rem;
+    @media screen and (max-width: $break-medium) {
+      margin-bottom: 3rem;
+    }
+  }
+  .container {
+    z-index: 1;
+    position: relative;
+  }
   .img-accent-top {
     height: 23rem;
     width: 23rem;
@@ -515,7 +567,6 @@
       width: 100%;
       height: auto;
     }
-  
   }
   &-text {
     padding-left: 5.7rem;
@@ -524,7 +575,6 @@
       padding-left: 0;
       padding-top: 4rem;
     }
-
   }
   h1 {
     color: #1b2f53;
@@ -551,7 +601,7 @@
 
     @media screen and (max-width: $break-medium) {
       padding: 3rem;
-      background-position: center right 35% !important; 
+      background-position: center right 35% !important;
       background-repeat: no-repeat;
       // margin-bottom: -8rem;
     }
@@ -562,7 +612,10 @@
     .big-arrow-link {
       color: #fff;
     }
-
+    p {
+      font-size: 2.8rem;
+      line-height: 3.8rem;
+    }
     h6 {
       font-size: 3.6rem;
       font-weight: bold;
@@ -615,22 +668,22 @@ footer {
       position: static;
     }
 
-   .bg-dark {
-    height: 1.7rem;
-    background-color: #000;
-    margin-bottom: 1.5rem;
+    .bg-dark {
+      height: 1.7rem;
+      background-color: #000;
+      margin-bottom: 1.5rem;
+    }
+    .bg-gray {
+      height: 1.7rem;
+      background-color: #eaeaea;
+      margin-bottom: 1.5rem;
+    }
   }
-  .bg-gray {
-    height: 1.7rem;
-    background-color: #EAEAEA;
-    margin-bottom: 1.5rem;
-  }
-}
   h1 {
     margin: 0;
     margin-bottom: 7.1rem;
     @media screen and (max-width: $break-medium) {
-        margin-bottom: 3rem;
+      margin-bottom: 3rem;
     }
   }
   .subtitle {
@@ -650,11 +703,12 @@ footer {
     color: $purple;
     h3 {
       color: inherit;
+      line-height: 5.8rem;
     }
   }
   &-auther {
     padding: 1.5rem 4rem 8.8rem 0;
-    
+
     @media screen and (max-width: $break-medium) {
       padding: 1.5rem 8rem 0 0;
     }
@@ -694,7 +748,7 @@ footer {
           opacity: 0;
         }
       }
-      button.owl-prev { 
+      button.owl-prev {
         background-image: url(../images/left.svg);
         margin-right: 2.4rem;
 
@@ -709,12 +763,13 @@ footer {
 
 .our-work {
   border-bottom: 0.2rem solid $dark-blue;
-  
+
   @media screen and (max-width: $break-medium) {
     position: relative;
   }
   &-section-title {
     h1 {
+      margin-bottom: 0;
       span {
         display: block;
       }
@@ -726,7 +781,7 @@ footer {
       justify-content: space-between;
 
       @media screen and (max-width: 1199px) {
-        margin-top: -.5rem;
+        margin-top: -0.5rem;
       }
       @media screen and (max-width: 991px) {
         margin-bottom: 4.6rem;
@@ -739,7 +794,9 @@ footer {
   }
   &-content {
     max-width: 50rem;
-
+    p {
+      max-width: 36.8rem;
+    }
     @media screen and (max-width: $break-medium) {
       margin-bottom: 3rem;
     }
@@ -758,26 +815,25 @@ footer {
 
     @media screen and (max-width: $break-medium) {
       left: auto;
-      right: 3rem; 
+      right: 3rem;
       top: 0;
     }
-
   }
   &-accent-relative {
     @media screen and (max-width: $break-medium) {
-      position: absolute!important;
+      position: absolute !important;
       top: 0;
       right: 0;
       left: 0;
-      opacity: .4;
+      opacity: 0.4;
     }
   }
 }
 
 .contact-popup {
   .bg-accent {
-    background-color: #FFF0C2;
-    opacity:.75;
+    background-color: #fff0c2;
+    opacity: 0.75;
     height: 40rem;
     z-index: -1;
     position: absolute;
@@ -837,8 +893,8 @@ footer {
       margin-top: 0;
 
       @media screen and (max-width: $break-medium) {
-        max-width: 100%;  
-      }      
+        max-width: 100%;
+      }
 
       textarea.form-control {
         height: 100%;
@@ -897,7 +953,7 @@ footer {
     opacity: 0.1;
     right: -15rem;
   }
-  >.bg-accent {
+  > .bg-accent {
     height: 37.6%;
     position: absolute;
     left: 0;
@@ -916,9 +972,9 @@ footer {
     width: 40rem;
     z-index: -1;
     height: 25rem;
-    background: #FFF0C2;
+    background: #fff0c2;
     opacity: 0.75;
-    
+
     @media screen and (max-width: $break-medium) {
       height: 15rem;
       width: 100vw;
