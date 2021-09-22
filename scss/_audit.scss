@@ -1,3 +1,44 @@
+.audit-banner {
+  > .container {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7rem;
+      top: 0;
+      background-image: url(../Images/audit-banner-arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 7rem;
+      height: 10rem;
+    }
+  }
+  .banner__inner {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 5rem;
+      top: 0;
+      background-image: url(../Images/Home_Performance_Icon.svg);
+      background-size: cover;
+      background-position: bottom;
+      width: 25.9rem;
+      height: 12.7rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      max-width: 40rem;
+      height: 32rem;
+      background: #fac72e;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+}
 .audit-feature {
   position: relative;
   .bg-block {
@@ -8,9 +49,22 @@
     height: 29.9rem;
     background-color: #f7c7ff;
     z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0rem;
+      bottom: 0px;
+      background-image: url(../Images/mobile-menu.svg);
+      filter: sepia(1);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 7rem;
+      height: 10rem;
+    }
   }
-  .bg-accent-white{
-      z-index: 0;
+  .bg-accent-white {
+    z-index: 0;
   }
   .why-us-card {
     box-shadow: 0px 3px 6px #00000029;
@@ -121,11 +175,38 @@
   .img-accent {
     position: absolute;
     top: 0;
-    right: 1.5rem;
-    width: 47.8rem;
+    right: 8rem;
+    width: 28rem;
+    height: 28rem;
+    background-image: url(../Images/sherlock-accent.svg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 .audit-customisation {
+  position: relative;
+  .banner-accent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+   .bg-dark {
+    height: 1.7rem;
+    background-color: #000;
+    margin-bottom: 1.5rem;
+  }
+  .bg-purple {
+    height: 1.7rem;
+    background-color: $purple;
+    opacity: .2;
+    margin-bottom: 1.5rem;
+  }
+}
   .customisation-inner {
     background: #f3f7ff;
     .img-accent {
@@ -148,11 +229,85 @@
   }
 }
 .custom-analysis {
+  position: relative;
+  .banner-accent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    z-index: -1;
+   .bg-dark {
+    height: 1.7rem;
+    background-color: #000;
+    margin-bottom: 1.5rem;
+  }
+  .bg-purple {
+    height: 1.7rem;
+    background-color: $purple;
+    opacity: .5;
+    margin-bottom: 1.5rem;
+  }
+}
   .row {
     background-color: #fff0c2;
   }
   p {
     font-size: 2.8rem;
     line-height: 3.8rem;
+  }
+}
+
+.what-to-know {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    background-color: #50bcba;
+  }
+  .audit-profile-card {
+    background-image: url(../Images/Audit_CTA.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 6rem 9.8rem;
+    position: relative;
+    z-index: 1;
+    .profile-card-head {
+      margin-top: 0;
+      margin-bottom: 4.9rem;
+      a {
+        font-size: 4.4rem;
+        text-decoration: underline;
+      }
+    }
+    .profile-card-body {
+      align-items: center;
+      flex-wrap: wrap;
+      .profile-left {
+        max-width: 50%;
+        flex: 0 0 50%;
+        .profile {
+          display: flex;
+          align-items: center;
+          .profile-img {
+            margin-right: 3.5rem;
+          }
+          .list-head {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .profile-right {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+    }
   }
 }

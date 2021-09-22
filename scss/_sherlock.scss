@@ -61,6 +61,8 @@
    background-color: #B7AFF7;
    z-index: -1;
   }
+
+ 
   .h1 {
     margin: 0;
     margin-bottom: 4.9rem;
@@ -297,4 +299,42 @@
     font-size: 2.8rem;
     line-height: 3.8rem;
   }
+}
+.sherlock-our-work{
+  position: relative;
+  .black-border {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      width: 100%;
+      height: 1rem;
+      margin-bottom: 1rem;
+      background-color: #000;
+      z-index: -1;
+    }
+
+  }
+.sherlock-our-work-inner {
+  position: relative;
+  background-color: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 7rem;
+    top: 0px;
+    background-image: url(../Images/sherlock-accent.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16rem;
+    height: 16rem;
+    filter: hue-rotate(
+      -100deg);
+          opacity: .5;
+  }
+}
 }

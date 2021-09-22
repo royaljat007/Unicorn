@@ -6,9 +6,48 @@
     background-position: top right;
     background-size: 45%;
     background-repeat: no-repeat;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../images/banner-accent.svg);
+      background-repeat: no-repeat;
+      width: 8rem;
+      height: 30rem;
+      position: absolute;
+      top: 0;
+      left: -7.5rem;
+      @media screen and (max-width: $break-medium) {
+        display: none;
+      }
+    }
     .banner__img {
       position: absolute;
       bottom: -4.5rem;
     }
   }
+  .banner-caption {
+    padding: 10rem 10rem 5rem;
+
+  }
+}
+
+
+.contact-else{
+  .contact-else-inner {
+    background-color: #fef7ff;
+    .contact-else-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      .link-with-arrow {
+        color: $purple;
+      }
+    }
+    .contact-else-right {
+      h5 {
+      margin: 0;
+    }
+  }
+}
 }
