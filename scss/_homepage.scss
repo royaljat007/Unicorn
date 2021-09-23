@@ -35,7 +35,7 @@
     z-index: -1;
   }
   .home-banner-inner {
-    padding-top: 10.6rem;
+    padding-top: 16.9rem;
     padding-bottom: 6.3rem;
 
     @media screen and (max-width: $break-medium) {
@@ -91,6 +91,9 @@
   .home-banner-bottom {
     padding-left: 5rem !important;
     padding-bottom: 3rem;
+    @media screen and (max-width: 991px) {
+      padding-left: 3rem!important;
+    }
     .home-banner-bottom-left {
       padding-top: 22rem;
       padding-right: 6rem;
@@ -107,6 +110,7 @@
         width: 100%;
         max-width: 100%;
         flex: 0 0 auto;
+        padding-left: 0;
       }
 
       @media screen and (max-width: $break-medium) {
@@ -128,17 +132,21 @@
       }
     }
     .home-banner-bottom-right {
-      text-align: center;
+      text-align: left;
+      padding-left: 5.5rem;
+      padding-right: 5.5rem;
       @media screen and (max-width: 991px) {
         width: 100%;
         max-width: 100%;
         flex: 0 0 auto;
         padding-top: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
       }
     }
   }
   .gray-box {
-    width: 43.4rem;
+    width: 46.7rem;
     height: 43.4rem;
     background-color: #e8f0ff;
     position: absolute;
@@ -147,10 +155,17 @@
     z-index: -1;
 
     @media screen and (max-width: 1399px) {
-      width: 41.9rem;
+      width: 38rem;
+      height: 43rem;
+    }
+    @media screen and (max-width:1199px){
+      width: 32rem;
+      height: 47.2rem;
+    }
+    @media screen and (max-width:991px){
+      width: 44rem;
       height: 37.5rem;
     }
-
     @media screen and (max-width: $break-medium) {
       height: 15rem;
       width: 100vw;
