@@ -9,6 +9,16 @@ $(document).ready(function () {
       },
     },
   });
+  $(".audit-s-stroy-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
   $(".who-help-carousel").owlCarousel({
     loop: true,
     margin: 10,

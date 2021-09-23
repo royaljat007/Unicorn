@@ -4343,6 +4343,93 @@ footer .footer-logo {
           flex: 0 0 50%;
 }
 
+.audit-s-stroy {
+  border-bottom: 0.2rem solid #1b2f53;
+  position: relative;
+}
+
+.audit-s-stroy > .bg-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background-color: #B7AFF7;
+  z-index: -1;
+}
+
+.audit-s-stroy .bg-lines {
+  position: absolute;
+  list-style: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.audit-s-stroy .bg-lines li {
+  height: 2.9rem;
+  background-color: #b7aff7;
+  margin-bottom: 1.5rem;
+}
+
+.audit-s-stroy-carousel {
+  position: relative;
+  margin-top: 9rem;
+}
+
+.audit-s-stroy-box-content {
+  background-color: #1B2F53;
+  padding: 7%;
+}
+
+.audit-s-stroy-box-content * {
+  color: #fff;
+}
+
+.audit-s-stroy .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height: 0;
+  margin: auto;
+  line-height: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audit-s-stroy .owl-nav button.owl-prev,
+.audit-s-stroy .owl-nav button.owl-next {
+  width: 5.9rem;
+  height: 5.9rem;
+  font-size: 3.6rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: 9;
+  background-image: url(../images/right.svg);
+  background-size: contain;
+}
+
+.audit-s-stroy .owl-nav button.owl-prev span,
+.audit-s-stroy .owl-nav button.owl-next span {
+  opacity: 0;
+}
+
+.audit-s-stroy .owl-nav button.owl-prev {
+  background-image: url(../images/left.svg);
+}
+
 .success-story-banner {
   background-color: #d3f7e5;
 }
