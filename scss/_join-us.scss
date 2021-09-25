@@ -1,0 +1,28 @@
+.join-us-banner {
+  background-image: url(../Images/join-us.svg);
+  background-position: 0rem 132%;
+  background-size: 106%;
+  background-repeat: no-repeat;
+  .banner__inner {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 7.5rem;
+      background-image: url(../Images/join-us-banner-arrow.svg);
+      background-size: contain;
+      width: 13.4rem;
+      height: 13.4rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -7.5rem;
+      background-image: url(../Images/banner-accent.svg);
+      background-size: contain;
+      width: 7.5rem;
+      height: 16.8rem;
+    }
+  }
+}
