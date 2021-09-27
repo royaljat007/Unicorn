@@ -244,6 +244,14 @@ img {
   margin-bottom: 10rem;
 }
 
+.mt-7 {
+  margin-top: 7rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 7rem !important;
+}
+
 .mt-5 {
   margin-top: 5rem !important;
 }
@@ -4175,4 +4183,97 @@ footer .footer-logo {
   background-size: contain;
   width: 7.5rem;
   height: 16.8rem;
+}
+
+.join-us-banner-bottom .banner-bottom-inner {
+  padding-bottom: 25rem;
+  padding-top: 30rem;
+}
+.join-us-banner-bottom .banner-bottom-inner .arrow-title {
+  position: relative;
+}
+.join-us-banner-bottom .banner-bottom-inner .arrow-title::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 51px solid #50bcba;
+  border-top: 26px solid transparent;
+  border-bottom: 26px solid transparent;
+  position: absolute;
+  left: -8rem;
+}
+
+.full-width-cards {
+  background-image: url(../Images/large-card-bg.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 116.5%;
+}
+.full-width-cards .card-large-blue,
+.full-width-cards .card-large-yellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 95.6rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 7rem;
+}
+.full-width-cards .card-large-blue .card-left,
+.full-width-cards .card-large-yellow .card-left {
+  max-width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 10rem;
+}
+.full-width-cards .card-large-blue .card-right,
+.full-width-cards .card-large-yellow .card-right {
+  max-width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.full-width-cards .card-large-blue {
+  background-image: url(../Images/Join_Us_Job1.svg);
+}
+.full-width-cards .card-large-yellow {
+  background-image: url(../Images/Join_Us_Job2.svg);
+}
+.full-width-cards .minus-margin {
+  margin-top: -15rem;
+}
+
+.info-card {
+  width: 100%;
+  background-color: #fff;
+  max-width: 60rem;
+  padding: 4rem 7rem;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  position: absolute;
+  right: 7.2rem;
+  top: -15%;
+  z-index: 5;
+}
+.info-card .subtitle {
+  margin-top: 0;
+}
+.info-card .info-logo {
+  width: 15rem;
+  height: 13rem;
+  position: absolute;
+  right: 10rem;
+  bottom: 6rem;
+}
+
+.join-us-footer {
+  max-width: 71rem;
+}
+.join-us-footer .link-with-arrow {
+  color: #fff;
 }
